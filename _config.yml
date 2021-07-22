@@ -76,7 +76,7 @@ img_cdn: ""
 
 # the avatar on sidebar, support local or CORS resources
 asset_url: /assets
-avatar: https://cdn.jsdelivr.net/bure5kzam/bure5kzam.github.io/assets/img/avatar/favicon.png
+avatar: /assets/img/avatar/favicon.png
 
 # boolean type, the global switch for ToC in posts.
 toc: true
