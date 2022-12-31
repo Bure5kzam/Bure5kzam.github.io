@@ -137,33 +137,33 @@ include:
   - .htaccess
   - _pages
   
-# exclude:
-#   - "*.sublime-project"
-#   - "*.sublime-workspace"
-#   - vender/
-#   - .asset-cache
-#   - .bundle
-#   - .jekyll-assets-cache
-#   - .sass-cache
-#   - assets/js/plugins
-#   - assets/js/_main.js
-#   - assets/js/vendor
-#   - Capfile
-#   - CHANGELOG
-#   - config
-#   - Gemfile
-#   - Gruntfile.js
-#   - gulpfile.js
-#   - LICENSE
-#   - log
-#   - node_modules
-#   - package.json
-#   - package-lock.json
-#   - Rakefile
-#   - README
-#   - tmp
-#   - /docs # ignore Minimal Mistakes /docs
-#   - /test # ignore Minimal Mistakes /test
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor/
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - package-lock.json
+  - Rakefile
+  - README
+  - tmp
+  - /docs # ignore Minimal Mistakes /docs
+  - /test # ignore Minimal Mistakes /test
 
 keep_files:
   - .git
@@ -202,9 +202,9 @@ timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # Plugins (previously gems:)
 plugins:
-  # - jekyll-paginate
-  # - jekyll-sitemap
-  # - jekyll-gist
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
 
