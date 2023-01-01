@@ -1,0 +1,18 @@
+Bure5kzam:
+  name: "The bure5kzam"
+  bio: "What do you want"
+  avatar: "/assets/images/android-chrome-192x192 copy.png"
+  locaion: "somware"
+
+  links:
+    - label: "Hyundai-WIA"
+      icon: "fas fa-business-time"
+      url: ""
+
+    - label: " Suwon, KR"
+      icon: "fas fa-map-marker-alt"
+      url: ""
+
+    - label: "Email"
+      icon: "fas fa-envelope-square"
+      url: "mailto:bure5kzam@gmail.com"
