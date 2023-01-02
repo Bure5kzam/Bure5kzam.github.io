@@ -281,9 +281,7 @@ find 명령어는 실기문제(11번 ~ 16번)는 서비스 설정 파일을 찾�
 ## 실기
 
 - named 도메인 주소의 실제 IP 주소를 알려주는 도메인 네임 서버
-<!-- - [sendmail]({% link _posts/2022-08-01-linux-master_sendmail.md %}), 메일 전달 어플리케이션 -->
 - sendmail 메일 전달 어플리케이션
-<!-- - [dhcpd]({% link _posts/2022-09-13-linux-master_dhcpd.md %}), 동적 IP 할당 서버 -->
 - dhcpd 동적 IP 할당 서버
 - httpd 웹서버
 - NIS
