@@ -2,7 +2,7 @@
 layout: single
 title: 리눅스 마스터 1급 실기 리뷰
 date: 2022-07-10 11:20
-categor: LinuxMaster
+category: LinuxMaster
 summary: 
 ---
 
@@ -46,7 +46,7 @@ OMR 마킹 4지선다 유형으로 진행됩니다.
 
 # 시험 관련 팁
 
-## 시험 전 준비 (2차)
+## 터미널 환경 (2차)
 
 리눅스 마스터 1급의 2차 시험의 경우, 터미널 환경이 제공됩니다. (KAIT 홈페이지 보면 실기 + 필기로 진행된다고 써져있는데 상관없이 시험내내 터미널 쓸 수 있습니다.)
 
@@ -56,22 +56,23 @@ OMR 마킹 4지선다 유형으로 진행됩니다.
 
 (named나 sendmail 같은 실기 시험용 추천)
 
-## man pages 활용법 (2차)
+## man 명령어 (2차)
  
 리눅스 마스터는 명령어를 완전히 암기하고 응시하는 시험이 아닙니다.
 
 상황에 맞는 명령어나 바이너리만 암기하고 시험에서는 매뉴얼을 참고해야 합니다.
 
 ``` console
+# Example, 터미널에서 find 명령어의 메뉴얼을 보여주는 커맨드
 
-# 명령어 매뉴얼 보기
-
-man find
-
-# 
+$ man find
 ```
 
-man pages는 같은 명령어라도 섹션 마다 다른 내용을 갖고 있습니다.
+`man` 명령어의 매뉴얼을 참고하시면 시험에 많은 도움이 됩니다.
+
+### 특정 섹션 페이지 보기
+
+명령어 매뉴얼은 용도 별로 여러 섹션으로 나눠 작성되어있습니다.
 
 > $ man man , [DESCRIPTION]
 > 1   Executable programs or shell commands
@@ -84,17 +85,39 @@ man pages는 같은 명령어라도 섹션 마다 다른 내용을 갖고 있습
 > 8   System administration commands (usually only for root)
 > 9   Kernel routines [Non standard]
 
+사용자가 터미널에서 직접 실행하는 Shell commands 와 프로그램 내에서 실행하는 System calls 의 사용법이 같을리가 없겠죠.
+
 ``` console
+
 # 매뉴얼의 특정 세션 보기
-man 1 find # command
-man 5 find # config
+
+$ man 1 find # command
+$ man 5 find # config
+
 ```
+
+저는 시험 준비하면서 1, 5, 8 섹션을 많이 참고했습니다.
+
+### 키워드 검색하기
+
+명령어 이름, 명령어 설명에 있는 키워드를 검색할 수 있습니다.
+
+```console
+
+$ man -k find
+
+```
+
+### 매뉴얼 페이지에서 검색하기
 
  메뉴얼 페이지는 글이 많아 필요한 내용을 바로 찾기가 쉽지 않습니다.  검색하는 법을 기억해 두는 것이 좋습니다 
  man page에서 `슬래쉬 '/' + 키워드`로 찾을 수 있습니다.
 
 
-쉘에서 --help 옵션을 사용해 요약본을 볼 수도 있습니다.
+## 명령어 --help 옵션 활용하기
+
+일부 명령어는 --help 옵션을 지원합니다.
+명령어 옵션 사용법을 요약해 주기때문에 사용하려는 옵션이 기억안날 때 유용합니다.
 
 ```console
 [root@localhost share]# cat --help
@@ -112,16 +135,14 @@ Concatenate FILE(s), or standard input, to standard output.
 ...
 ```
 
-## man pgages 문법 해석하기
+<!-- ## man pgages 문법 해석하기
 
-...
+... -->
 
 
 ## find 명령어 활용하기
 
- 시험의 11번~ 16번 문제는 실기 문제로, 서비스의 설정파일을 수정해 올바르게 동작하도록 하는 문제들이 주어집니다.
- 
- 설정 파일의 문법을 알아야 풀 수 있기 때문에 `find` 명령어로 예시 파일을 확인할 필요가 있습니다.
+find 명령어는 실기문제(11번 ~ 16번)는 서비스 설정 파일을 찾을 때 많이 사용합니다.
 
  ``` console
  # find {명령어} [-name 이름] [-type {f | d}] 
@@ -129,11 +150,133 @@ Concatenate FILE(s), or standard input, to standard output.
 /etc/named.conf
  ```
 
-type 옵션의 값은 디렉토리(d)와 파일 (f)을 의미합니다.
+`type` 옵션은 디렉토리(d)와 파일 (f)을 지정할 수 있습니다.
+
+## 실기 문제 위주로 공부하기
+
+2차 시험은 필기 10 문제와 실기 6 문제가 출제되는데, 실기 비율이 높습니다. (필기 : 40, 실기 : 60)
+
+같은 문제를 맞춰도 실기를 맞추는게 배점이 높습니다.
 
 # 문제 유형
 
+제가 시험을 준비하며 공부했던 명령어의 80% 정도 기록한 것 같습니다.
+(이론 제외)
+
+보시고 대충 시험에 이런 내용들이 나오는구나 생각하시면 될 것 같습니다.
+
 ## 필기
+
+사용자 계정 관리 명령어
+
+- useradd
+- passwd
+- usermod
+- chage
+
+사용자 관리 파일
+
+- /etc/login.defs
+- /etc/skel
+- etc/default/useradd
+
+사용자 권한 관리 명령어
+
+- chomod
+- chown
+- whoami
+- id
+- lslogin
+
+파일 링크 관리 명령어
+
+- ln
+
+파일 시스템 관련 명령어
+
+- mount, umount
+- fsck
+- mke2fs
+- dumpe2fs
+- chattr,
+- lsattr
+- /etc/fstab
+
+디스크 쿼터
+
+- quotacheck
+- quota
+- edquota
+- blkid
+- dumpe2fs
+- /etc/fstab
+
+볼륨 관련 명령어
+
+- PV, LV
+
+프로세스 관리 명령어
+
+- kill
+- ps
+- top
+- nice
+- renice
+- pgrep
+- /proc/{PID}/exe
+
+
+어플리케이션 관리 명령어
+
+- rpm, yum
+- which, whereis
+
+빌드 명령어
+
+- gcc
+
+커널 관련 명령어
+
+- lselease
+- modeinfo
+- uname -r
+
+프린터
+
+- lpr
+- lp
+- lpq
+  
+로그 관련
+
+- logrotate
+- dmesg
+- lastlog
+- last
+- lastb
+- logger
+
+모듈 작업 명령어
+
+- depmod
+- rmmod
+
+압축
+
+- tar
+
+네트워크 관련 명령어
+
+- ssh
+- nmap
+- netstat
+
+백업 관련 명령어
+
+- dump
+- dd
+- cpio
+- rsync
 
 ## 실기
 
@@ -141,7 +284,7 @@ type 옵션의 값은 디렉토리(d)와 파일 (f)을 의미합니다.
 - [sendmail]({% link _posts/2022-08-01-linux-master_sendmail.md %}), 메일 전달 어플리케이션
 - [dhcpd]({% link _posts/2022-09-13-linux-master_dhcpd.md %}), 동적 IP 할당 서버
 - [httpd]({% link _posts/2022-09-13-linux-master_httpd.md %}) 요청시 웹페이지를 제공하는 웹서버 (http 사용)
-- NIS, 
+- NIS
 - xinetd
 - [iptables]({% link _posts/2022-08-18-linux-master_Iptable.md %})
 - [samba]({% link _posts/2022-07-27-linux-master_samba.md %})
@@ -155,6 +298,12 @@ type 옵션의 값은 디렉토리(d)와 파일 (f)을 의미합니다.
 - xinetd
 - squid
 
-# 레퍼런스
+---
 
-1. https://ihp001.tistory.com/65
+취득하고 주변에 자랑하면 70%는 몰라서 자격증으로서의 입지는 잘 모르겠네요.
+
+임베디드랑 보안하는 사람들만 아는 시험인 것 같습니다.
+
+<!-- # 레퍼런스
+
+1. https://ihp001.tistory.com/65 -->
