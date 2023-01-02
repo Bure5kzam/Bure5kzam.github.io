@@ -164,6 +164,7 @@ exclude:
   - tmp
   - /docs # ignore Minimal Mistakes /docs
   - /test # ignore Minimal Mistakes /test
+  - _posts/unpublished/
 
 keep_files:
   - .git
@@ -272,7 +273,6 @@ defaults:
       show_date: true
       toc: true
       toc_sticky: true
-
 
 collections:
   staff_members: 
