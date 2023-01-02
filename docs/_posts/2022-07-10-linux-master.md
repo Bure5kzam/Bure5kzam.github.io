@@ -2,7 +2,7 @@
 layout: single
 title: 리눅스 마스터 1급 실기 리뷰
 date: 2022-07-10 11:20
-category: LinuxMaster
+category: linux LinuxMaster
 summary: 
 ---
 
@@ -280,14 +280,20 @@ find 명령어는 실기문제(11번 ~ 16번)는 서비스 설정 파일을 찾�
 
 ## 실기
 
-- [named]({% link _posts/2022-08-13-linux-master_named.md %}), 도메인 주소의 실제 IP 주소를 알려주는 도메인 네임 서버
-- [sendmail]({% link _posts/2022-08-01-linux-master_sendmail.md %}), 메일 전달 어플리케이션
-- [dhcpd]({% link _posts/2022-09-13-linux-master_dhcpd.md %}), 동적 IP 할당 서버
-- [httpd]({% link _posts/2022-09-13-linux-master_httpd.md %}) 요청시 웹페이지를 제공하는 웹서버 (http 사용)
+<!-- - [named]({% link _posts/2022-08-13-linux-master_named.md %}), 도메인 주소의 실제 IP 주소를 알려주는 도메인 네임 서버 -->
+- named 도메인 주소의 실제 IP 주소를 알려주는 도메인 네임 서버
+<!-- - [sendmail]({% link _posts/2022-08-01-linux-master_sendmail.md %}), 메일 전달 어플리케이션 -->
+- sendmail 메일 전달 어플리케이션
+<!-- - [dhcpd]({% link _posts/2022-09-13-linux-master_dhcpd.md %}), 동적 IP 할당 서버 -->
+- dhcpd 동적 IP 할당 서버
+<!-- - [httpd]({% link _posts/2022-09-13-linux-master_httpd.md %}) 요청시 웹페이지를 제공하는 웹서버 (http 사용) -->
+- httpd 웹서버
 - NIS
 - xinetd
-- [iptables]({% link _posts/2022-08-18-linux-master_Iptable.md %})
-- [samba]({% link _posts/2022-07-27-linux-master_samba.md %})
+<!-- - [iptables]({% link _posts/2022-08-18-linux-master_Iptable.md %}) -->
+- iptables
+<!-- - [samba]({% link _posts/2022-07-27-linux-master_samba.md %}) -->
+- samba
 - NFS 서버의 파일시스템을 로컬에 마운트 할 수 있도록 제공 (NFS 사용)
 - firewalld
 - telent
