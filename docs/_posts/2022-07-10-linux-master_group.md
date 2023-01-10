@@ -4,37 +4,80 @@ title: 리눅스 그룹
 date: 2022-07-10 12:25
 category: LinuxMaster
 ---
-# Group
+# Group 개요
 
-리눅스에서 한 유저는 여러 그룹에 속할 수 있습니다.
+리눅스에서는 한 유저가 여러 그룹에 속할 수 있습니다.
 
-primary group은 사용자가 처음 속하는 그룹으로, 파일을 생성할 때 그룹 소유자로 primary group이 설정됩니다.
-secondary group은 유저가 속했지만 유저의 primary group이 아닌 그룹들입니다.
+## group의 구분
 
-별 다른 설정 없이 유저를 생성하면 유저 이름과 동일한 그룹이 함께 생성되고 유저의 Primary group으로 지정됩니다. 유저는 Primary group외에도 Secondary group의 권한을 갖게되며, 유저가 파일을 생성하면 Primary group의 소유로 생성이 됩니다.
+리눅스에서 유저는 `primary group`과 `second group`을 가질 수 있습니다.
 
-시스템 내 그룹에 대한 정보는 /etc/group과 /etc/gshadow 저장됩니다.
+### primary group
 
-# Files
+파일 생성 시 파일의 `own group`으로 지정되는 그룹들입니다.
+
+ 처음 유저를 생성하면 `primary group`이 UID로 지정됩니다. (옵션 없을 경우)
+
+
+### secondary group
+
+유저가 속한 그룹 중 `primary group`이 아닌 그룹들입니다.
+
+ 파일에 접근할 때 `own group`이 유저의 `primary group` 이나 `secondary group` 이면 권한을 휙득합니다.
+
+
+`primary group`이 `secondary group`보다 유달리 특별한 권한을 갖는건 아니며, 파일의 `own group`으로 지정할 그룹이 필요하기 때문입니다. 
+
+> [Oracle, Unix group](https://docs.oracle.com/cd/E19253-01/817-1985/userconcept-35906/index.html)
+
+# 관련 파일
+
+시스템에서 그룹에 대한 정보는 `/etc/group`과 `/etc/gshadow` 파일에서 관리합니다.
+
 ## /etc/group
 
+시스템 내의 그룹과, 속한 유저들을 관리합니다.
+
 ```console
-# 필드별 의미, :로 구분
-그룹이름:비밀번호:GID:UserId1, UserId2...
+# 각 필드는 :로 구분됩니다.
+Group Name:Password:GID:UserId1, UserId2...
 ```
 
 ## /etc/gshadow
 
-그룹별 비밀번호와 관리자와 멤버 정보를 관리합니다.
+그룹 계정을 위한 암호화된 정보를 관리하는 계정입니다.
+
+일반 유저는 접근할 수 없으며, 
+
+`man 5 gshadow` 매뉴얼에서 필드별 의미를 확인할 수 있습니다.
 
 ```console
-# man 5 gshadow`로 필드별 의미를 확인할 수 있음.
-GNAME : PW : ADMINISTRATOR : MEMBERS
+Group name : Encrypted password : ADMINISTRATOR : MEMBERS
 ```
 
-# Command
+**Group name**
+
+`/etc/group`에 존재하는 그룹 명이어야합니다.
+
+**Encrypted password**
+
+그룹 구성원이 아닌 계정이 그룹 권한을 얻을 때 사용합니다.
+
+암호화된 패스워드입니다. `!`나 `*`의 경우, 현재 사용할 수 없음을 의미합니다.
+
+**administrator**
+
+그룹의 패스워드를 수정할 수 있는 계정입니다.
+
+**Members**
+
+패스워드 없이 로그인할 수 있는 계정입니다.
+
+
+# 명령어
 
 ## $groupadd
+
 그룹을 생성하는 명령어입니다.
 
 | 주요 옵션 | 내용 |
@@ -42,14 +85,13 @@ GNAME : PW : ADMINISTRATOR : MEMBERS
 |`-o`, --none-uniqe | 중복 GID 허용|
 
 ## $gpasswd
-`/etc/group`과 `/etc/gshadow`를 수정하며 그룹의 관리자와 멤버를 설정하는 명령어입니다.
-passwd가 붙는 명령어는 shadow파일과 많은 관련이 있습니다.
 
-`/etc/gshadow`에는 그룹 이름과 gid, 그룹 관리자와 멤버 정보가 있습니다.
+그룹의 관리자와 멤버를 설정하는 명령어입니다.(`/etc/gshadow`를 수정)<br/>
+passwd 접미사를 갖는 명령어는 shadow파일과 많은 관련이 있습니다.<br/>
+(`/etc/gshadow`에는 그룹 이름과 gid, 그룹 관리자와 멤버 정보가 있습니다.)
 
-```
+```console
 gpasswd [option] group
-
 
 [root@localhost ~]# head -3 /etc/group
 root:x:0:
@@ -63,6 +105,7 @@ bin:x:1:
 daemon:x:2:
 ```
 
+`gpasswd`는 많은 옵션을 갖고 있습니다.
 
 **관리자 및 멤버 관리 명령어**
 
@@ -94,7 +137,8 @@ gpasswd 명령어로 그룹의 관리자와 멤버를 설정할 수 있습니다
 | -d, --delete _user_ | 멤버 유저 리스트를 설정합니다.   |
 
 ## $groupmod
-그룹 정의를 수정하는 명령어입니다.
+
+그룹 정의를 수정하는 명령어입니다.<br/>
 GID, 이름, 비밀번호 수정을 할 수 있습니다.
 
 ```console
@@ -112,19 +156,24 @@ groupmod [options] GROUP
 ```
 
 ## $groupdel
+
 시스템 계정 파일을 수정하고 GROUP과 관련된 엔트리들을 모두 삭제합니다.
+
 ```console
 groupdel [options] GROUP
 ```
 
 ## $groups
+
 유저가 속한 그룹을 출력합니다.
 
 ## $grpck
+
 `/etc/group`와 `/etc/gshadow` 파일의 무결성을 검사합니다.
 
 ## $newgrp
-접속중인 상태에서 gid를 변경합니다. - 옵션을 추가하면 재부팅하지 않아도 적용되게 할 수 있습니다.
+
+접속중인 상태에서 gid를 변경합니다.<br/> - 옵션을 추가하면 재부팅하지 않아도 적용되게 할 수 있습니다.
 
 ```console
 newgrp [-] [group]
@@ -132,6 +181,7 @@ newgrp [-] [group]
 
 
 # Reference
+
 [/etc/shadow에 대한 이해](https://www.cyberciti.biz/faq/understanding-etcshadow-file/?utm_source=Related_Tutorials&utm_medium=faq&utm_campaign=Apr_22_2022_EOP_TEXT)
 [/etc/shadow에 대한 이해2](https://www.techtarget.com/searchsecurity/definition/shadow-password-file)
 [linux manual](https://man7.org/linux/man-pages/man5/passwd.5.html)
