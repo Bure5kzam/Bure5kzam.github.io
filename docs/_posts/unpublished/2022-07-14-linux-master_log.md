@@ -1,6 +1,6 @@
 ---
 layout: single
-title: 리눅스 로그 (rsyslog)
+title: 우분투 로그 (rsyslog)
 date: 2022-07-14 21:52
 category: LinuxMaster
 ---

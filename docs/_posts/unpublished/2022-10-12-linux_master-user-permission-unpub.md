@@ -1,6 +1,6 @@
 ---
 layout: single
-title: 리눅스 파일의 권한 및 속성
+title: 우분투 파일의 권한 및 속성
 date: 2022-09-23 21:55
 category: LinuxMaster
 summary: 

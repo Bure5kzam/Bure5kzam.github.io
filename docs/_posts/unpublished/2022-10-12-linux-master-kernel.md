@@ -1,6 +1,6 @@
 ---
 layout: single
-title: 리눅스 커널 컴파일
+title: 우분투 커널 컴파일
 published: false
 ---
 

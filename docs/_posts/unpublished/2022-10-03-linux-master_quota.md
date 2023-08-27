@@ -1,6 +1,6 @@
 ---
 layout: single
-title: 리눅스 쿼터 (quota)
+title: 우분투 쿼터 (quota)
 published: false
 ---
 

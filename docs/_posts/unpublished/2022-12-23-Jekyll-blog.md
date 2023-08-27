@@ -50,9 +50,13 @@ Jekyll 블로그를 하는 이유
 7. Git에 적용하기 
 
 Gem-based method
+
+빌드된 루비 
 사이트 테마를 로컬의 /vendor에서 가져와 적용하는 방식
 
 Remote theme
+
+
 사이트 테마를 원격 서버에서 테마를 가져와 적용하는 방식
 
 # Gem-based method

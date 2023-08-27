@@ -247,34 +247,46 @@ compress_html:
   ignore:
     envs: development
 
-comments:
-      provider: "facebook"
-      facebook:
-        appid: # optional
-        num_posts: # 5 (default)
-        colorscheme: # "light" (default), "dark"
-
-
 # Defaults
 defaults:
-  # _posts
-  - scope:
-      path: ""
+  #_posts
+  - 
+    scope:
+      path: "_posts/algo"
       type: posts
     values:
-      author_profile: true
+      layout: single
+
       author: Bure5kzam
+      author_profile: true
+
+      toc: true
+      toc_sticky: true
+
       read_time: true
       comments: true # true
       share: true
       related: true
       repository: Bure5kzam/GithubBlog
-      comments: true
       show_date: true
+
+  - scope:
+      path: "_posts/ubuntu"
+      type: posts
+    values:
+      layout: single
+
+      author: Bure5kzam
+      author_profile: true
+
       toc: true
       toc_sticky: true
 
-collections:
-  staff_members: 
-    people: true
+      read_time: true
+      comments: true # true
+      share: true
+      related: true
+      repository: Bure5kzam/GithubBlog
+      show_date: true
+
 

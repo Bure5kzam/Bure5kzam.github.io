@@ -1,6 +1,6 @@
 ---
 layout: single
-title: 리눅스 samba 서버
+title: 우분투 samba 서버
 date: 2022-07-27 22:18
 category: LinuxMaster
 summary: 

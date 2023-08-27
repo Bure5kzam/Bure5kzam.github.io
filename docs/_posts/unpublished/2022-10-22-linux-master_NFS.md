@@ -1,6 +1,6 @@
 ---
 layout: single
-title: 리눅스 마스터 NFS
+title: 우분투 마스터 NFS
 published : false
 ---
 

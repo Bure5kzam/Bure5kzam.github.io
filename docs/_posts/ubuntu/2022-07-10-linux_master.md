@@ -1,8 +1,8 @@
 ---
 layout: single
-title: 리눅스 마스터 1급 실기 리뷰
+title: 우분투 마스터 1급 실기 리뷰
 date: 2022-07-10 11:20
-category: linux LinuxMaster
+category: ubuntu
 summary: 
 ---
 

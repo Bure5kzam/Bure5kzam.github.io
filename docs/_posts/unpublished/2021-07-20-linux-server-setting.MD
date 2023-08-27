@@ -1,5 +1,5 @@
 ---
-title: 리눅스 서버 세팅
+title: 우분투 서버 세팅
 date: 2021-07-20 20:00:00 +/-TTTT
 categories: [TIL, linux]
 tags: [aws, linux, nodejs]     # TAG names should always be lowercase

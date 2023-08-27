@@ -1,6 +1,6 @@
 ---
 layout: single
-title: 리눅스 마스터 sendmail
+title: 우분투 마스터 sendmail
 date: 2022-08-01 19:20
 category: LinuxMaster
 published : true

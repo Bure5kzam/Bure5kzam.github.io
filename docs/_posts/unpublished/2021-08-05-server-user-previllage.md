@@ -1,5 +1,5 @@
 ---
-title: 리눅스 서버 유저 컨트롤
+title: 우분투 서버 유저 컨트롤
 date: 2021-08-20 20:00:00 +/-TTTT
 categories: [TIL, linux]
 toc : true

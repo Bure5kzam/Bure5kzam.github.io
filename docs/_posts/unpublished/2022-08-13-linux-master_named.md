@@ -1,6 +1,6 @@
 ---
 layout: single
-title: 리눅스 DNS
+title: 우분투 DNS
 date: 2022-08-13 21:29
 category: LinuxMaster
 ---

@@ -1,6 +1,6 @@
 ---
 layout: single
-title: 리눅스 도메인 서버 구축하기
+title: 우분투 도메인 서버 구축하기
 ---
 
 # Overview

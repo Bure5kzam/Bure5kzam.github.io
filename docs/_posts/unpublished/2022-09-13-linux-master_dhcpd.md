@@ -1,6 +1,6 @@
 ---
 layout: single
-title: 리눅스 dhcpd
+title: 우분투 dhcpd
 ---
 
 # Overview

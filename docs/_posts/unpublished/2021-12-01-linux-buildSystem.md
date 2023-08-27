@@ -9,7 +9,8 @@ summary:
 ---
 빌드 프로세스를 설정해주고 그대로 수행하는 프로그램을 뜻한다.
 
-#make
+# make
+
 - Build System
 - 수정된 파일만 재 컴파일
 - 의존성 잇는 파일만 재컴파일
@@ -17,6 +18,7 @@ summary:
 - makefile을 만들어야함
 
 # 샘플
+
 target과 스크립트 실행부로 구성되어있음.
 ```bash
 HI:
@@ -27,6 +29,7 @@ make HI => 지정된 타겟만 실행
 make => 가장 맨 위에 있는 Target만 수행
 
 # 의존성
+
 ```bash
 HI: one two
     echo "hello"
@@ -48,6 +51,7 @@ hello
 ```
 
 # 매크로 변수 추가
+
 ```bash
 A = "AAA"
 B = "BBB"
@@ -83,10 +87,12 @@ who:
 ```
 
 ## =와 :=
+
 Simple Equel(=) 는 전처리 단계에서 값을 넣는다 
 
 Reculsive Equel (=) 
 최종 변수 결과를 집어 넣는다
+
 ```bash
 NAME = "OH"
 
@@ -102,6 +108,7 @@ who:
 ```
 
 결과
+
 ```bash
 echo "OH"
 OH

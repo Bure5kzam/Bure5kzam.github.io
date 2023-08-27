@@ -1,6 +1,6 @@
 ---
 layout: single
-title: 리눅스 마스터 m4 요약
+title: 우분투 마스터 m4 요약
 published : false
 ---
 

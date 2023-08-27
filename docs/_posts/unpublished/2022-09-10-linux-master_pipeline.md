@@ -1,6 +1,6 @@
 ---
 layout: single
-title: 리눅스 데이터 스트림
+title: 우분투 데이터 스트림
 category : linuxMaster
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: single
-title: 리눅스 SELinux
+title: 우분투 SELinux
 published: false
 ---
 

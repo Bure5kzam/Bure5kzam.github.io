@@ -1,6 +1,6 @@
 ---
 layout: single
-title: 리눅스 그룹
+title: 우분투 그룹
 date: 2022-07-10 12:25
 category: LinuxMaster
 ---
@@ -76,13 +76,7 @@ Group name : Encrypted password : ADMINISTRATOR : MEMBERS
 
 # 명령어
 
-## $groupadd
 
-그룹을 생성하는 명령어입니다.
-
-| 주요 옵션 | 내용 |
-| -g, --gid _GID_ | 해당 그룹 GID로 생성 <br/> `-f` 이미 존재하면 다른 gid 선택. <br/> `-o` 중복 선택| 
-|`-o`, --none-uniqe | 중복 GID 허용|
 
 ## $gpasswd
 

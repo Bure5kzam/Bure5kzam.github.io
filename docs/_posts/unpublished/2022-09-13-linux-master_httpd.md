@@ -1,6 +1,6 @@
 ---
 layout: single
-title: 리눅스 httpd
+title: 우분투 httpd
 ---
 
 # Overview

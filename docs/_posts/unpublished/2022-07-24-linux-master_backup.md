@@ -1,6 +1,6 @@
 ---
 layout: single
-title: 리눅스 백업
+title: 우분투 백업
 date: 2022-07-24 23:06
 category: LinuxMaster
 ---
