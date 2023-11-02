@@ -1,0 +1,249 @@
+{
+  "main": {
+    "id": "e6a5a627b5ba0627",
+    "type": "split",
+    "children": [
+      {
+        "id": "5bdcef5c3b978522",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fe8a370f0e4ca09d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2023-10-23-vscode-환경설정하기.md",
+                "mode": "source",
+                "source": false
+              }
+            },
+            "group": "1178dd82100d7e89"
+          },
+          {
+            "id": "2a63b2543bc8a891",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "unpublished/fregment/vscode-workspace.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "88343f48788ed118",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2023-10-23-vscode-환경설정하기.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      },
+      {
+        "id": "7c13d4dfe6b05db6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b56efaff49d3b714",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "2023-10-23-vscode-환경설정하기.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 1,
+                  "close": false
+                }
+              }
+            },
+            "group": "1178dd82100d7e89"
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ccbd535e3b11c87f",
+    "type": "split",
+    "children": [
+      {
+        "id": "207a44e9e32c24c8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "aaaee47c519785ea",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "ee7d528ed7739636",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#React",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e31fd26279640d53",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 463.5
+  },
+  "right": {
+    "id": "b4996101817f701a",
+    "type": "split",
+    "children": [
+      {
+        "id": "54a7c28c3f19ab8d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "71e7fa8ceb09c55c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "2023-10-23-vscode-환경설정하기.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "96c0ce4ef7f903fd",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "2023-10-23-vscode-환경설정하기.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "ad57351223d5387d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "e0b8fcbcba2c8a4c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "2023-10-23-vscode-환경설정하기.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "88343f48788ed118",
+  "lastOpenFiles": [
+    "unpublished/fregment/vscode-remote-tunneling.md",
+    "2023-10-23-vscode-환경설정하기.md",
+    "unpublished/writing/vscode 확장 프로그램 구성.md",
+    "GraphQl.md",
+    "unpublished/fregment/vscode-codespace.md",
+    "unpublished/fregment/vscode-workspace.md",
+    "unpublished/2023-09-15-c++-std:placeholders.md",
+    "unpublished/fregment/vscode-setting-scope.md",
+    "unpublished/fregment/vscode-dotfiles.md",
+    "unpublished/drafts/2023-10-17-vscode extension.md",
+    "unpublished/drafts/2023-10-14-vscode-devcontainer.md",
+    "unpublished/drafts/2023-10-22-docker-caution point when specify path.md",
+    "unpublished/fregment/vscode server 로컬 익스텐션 구성하기.md",
+    "unpublished/fregment/2023-09-15-c++-std::decltype.md",
+    "unpublished/fregment/2023-10-03-ros-vsc_사용해보기.md",
+    "unpublished/fregment/2023-10-10-docker-docker_exec_script_추가하기.md",
+    "unpublished/writing/vscode-server.md",
+    "unpublished/writing/2023-10-16-vscode-server.md",
+    "unpublished/unpublished/2023-10-03-docker-volumes.md",
+    "unpublished/unpublished/2023-10-01-ros-빌드용_도커이미지_구성하기.md",
+    "unpublished/writing/2023-10-22-docker-caution point when specify path.md",
+    "unpublished/old/2023-10-12-ros-package_manifest_files.md",
+    "unpublished/old/2023-09-15-c++-constant_expression.md",
+    "unpublished/old/2023-09-15-c++-std-forward.md",
+    "unpublished/old/2021-07-20-linux-server-setting.MD",
+    "unpublished/old",
+    "fregment/vscode-codespace.md",
+    "unpublished",
+    "fregment"
+  ]
+}

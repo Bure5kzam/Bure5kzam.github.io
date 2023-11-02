@@ -1,20 +1,18 @@
 ---
 layout: single
-title: linux-script
-date: 2021-12-01 19:50
-category: [TIL, linux]
-author: bure5kzam
-tags: [TIL]
-summary: 
+title: 리눅스 스크립트 예시
 ---
+
 간단한 예시
+
 ```bash
 echo "HOW ARE YOU?"
 read ans
 echo "FINE THANKS"
 ```
 
-#Born shell
+## Born shell
+
 ```sh
 #! /bin/sh
 a=100 #모든 변수 값은 문자열로 취급됨
@@ -27,7 +25,7 @@ echo $b #100 똑같이 출력
 echo $1 #스크립트 실행시 함께 실행된 argument 실행
 
 # 2. 산술연산
-sum=`expr $a + $b` 
+sum=`expr $a + $b`
 echo $sum
 
 # 3. 조건문
@@ -39,7 +37,8 @@ else # elif
 fi
 ```
 
-# Bash Shell
+## Bash Shell
+
 ```bash
 #!/bin/bash
 

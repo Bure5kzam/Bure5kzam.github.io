@@ -18,7 +18,7 @@ decltype ( expression )	(2)	(since C++11)
 
 1. 만약 주어진 인자가 { }둘러 쌓이지 않은 id-expression 이거나 둘러 쌓이지 않은 클래스 멤버 접근 표현식일 경우, decitype는 이 표현식으로 명명된 엔티티 타입을 생성한다. 만약 해당 엔티티가 없거나 인자가 오버로드된 함수 집합을 지명하는 경우 잘못된 프로그램 형식이다.
 2. 인자가 T 타입의 표현식일 경우
-   1. 표현식의 value category가 xvalue이면 T&&를 산출
+   1. 표현식의 value category가 xvalue이2023-09-15-c++-std-forward면 T&&를 산출
    2. 표현식의 value category가 lvalue이면 T&를 산출
    3. 표현식의 value category가 prvalue이면 T를 산출
 
