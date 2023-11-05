@@ -14,20 +14,57 @@
 
 ## extension 설치하기
 
-**온라인**
+vscode-server에 접속하면 원격 접속 상태에서도 확장프로그램을 사용할 수 있다.
 
 인터넷이 있으면 마켓 플레이스 기능을 이용해서 설치할 수 있다. ( ctrl + shift + x )
 
 마켓 플레이스에서 에러 메세지 'XHR Request fail'가 뜬다면 vs code가 익스텐션 목록을 불러오는데 실패한 것이다. 이 경우 인터넷 연결이 비활성화 되었거나 방화벽에 막혔을 수 도 있다.
 
-**오프라인**
+오프라인에서 설치하고 싶은 경우, 'vsix' 파일을 받아다가 있으면 설치할 수 있다.
 
-로컬에 익스텐션 패키지 파일인 'vsix' 파일이 있으면 설치할 수 있다.
+> 관련 vscode 링크 추가
 
-**원격 접속 **
+[[오프라인에서 vscode 확장 프로그램 구성하기.md]]
 
-vs code원격 접속 상태에서도 익스텐션을 사용할 수 있다.
-단 익스텐션 마다 로컬에 설치될 수도 있고 원격 머신에설치될 수도 있기 때문에 오프라인으로 직접 구성하려면 vs code의 익스텐션 관리 프로세스나 원격 접속 프로세스를 알아야 한다.
+> ssh 접속 상태에서 사용하기
+> 테마, 스니펫처럼 UI 관련 지원을 제공하는 확장 프로그램은 로컬에 설치되는 반면, 그 외 대부분은 SSH로 접속한 호스트머신에 설치된다.
+> [vscode document](https://code.visualstudio.com/docs/remote/ssh#_managing-extensions)
+1
 
-우선은 관련 링크만 두고 추후 기회될 때 기록하겠다.
-https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://code.visualstudio.com/docs/remote/ssh&ved=2ahUKEwiys83R56OCAxXtZvUHHffxDgEQFnoECBYQAQ&usg=AOvVaw2q2uQWYGD02Os8cKonmzBx
+```json
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+		# 표시되는 라벨 이름
+      "label": "Run tests",
+	  # task 유형. 사용자 정의 작업의 경우 shell 또는 process
+      "type": "shell",
+	  # task에서 실행할 커맨드
+      "command": "./scripts/test.sh",
+      "windows": {
+        "command": ".\\scripts\\test.cmd"
+	  # task가 속한 그룹.
+      "group": "test",
+	  # 출력이 사용자 인터페이스에서 어떻게 나올지를 정의
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      }
+	  # 기존의 cwd ( 현재 작업중인 디렉토리), env (환경 변수), shell (기본 쉘)을 재정의.
+	  "options" : {
+
+	  }
+	  # 작업이 실행되는 시기, 방법 정의
+	  runOptions : {
+
+	  }
+    }
+  ]
+}
+
+```
+
+[vscode document](https://code.visualstudio.com/docs/editor/tasks)

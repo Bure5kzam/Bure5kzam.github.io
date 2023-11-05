@@ -1,8 +1,8 @@
 ## vscode 설정의 종류
 
-다른 글에서 설정 기준은 크게 Default, User, Workspace가 있다고 설명했었다.
+이전 글에서 설정 기준은 크게 Default, User, Workspace가 있다고 설명했었다.
 
-사실 vs code의 설정 적용 기준 조금 더 세부적이다.
+사실 더 세부적인 vs code의 설정 적용 기준들이 있다.
 
 - 깃허브 유저
 - 프로필
