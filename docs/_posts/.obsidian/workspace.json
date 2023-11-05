@@ -8,19 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "fe8a370f0e4ca09d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2023-10-23-vscode-환경설정하기.md",
-                "mode": "source",
-                "source": false
-              }
-            },
-            "group": "1178dd82100d7e89"
-          },
-          {
             "id": "2a63b2543bc8a891",
             "type": "leaf",
             "state": {
@@ -38,14 +25,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2023-10-23-vscode-환경설정하기.md",
+                "file": "unpublished/fregment/오프라인에서 vscode 확장 프로그램 구성하기.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0033370106df454f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "unpublished/fregment/vscode-setting-scope.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "7c13d4dfe6b05db6",
@@ -57,7 +56,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "2023-10-23-vscode-환경설정하기.md",
+                "file": "unpublished/fregment/오프라인에서 vscode 확장 프로그램 구성하기.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -84,8 +83,7 @@
                   "close": false
                 }
               }
-            },
-            "group": "1178dd82100d7e89"
+            }
           }
         ]
       }
@@ -153,7 +151,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2023-10-23-vscode-환경설정하기.md",
+                "file": "unpublished/fregment/오프라인에서 vscode 확장 프로그램 구성하기.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -170,7 +168,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2023-10-23-vscode-환경설정하기.md",
+                "file": "unpublished/fregment/오프라인에서 vscode 확장 프로그램 구성하기.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -193,7 +191,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2023-10-23-vscode-환경설정하기.md"
+                "file": "unpublished/fregment/오프라인에서 vscode 확장 프로그램 구성하기.md"
               }
             }
           }
@@ -216,33 +214,33 @@
   },
   "active": "88343f48788ed118",
   "lastOpenFiles": [
+    "2023-10-23-vscode-환경설정.md",
+    "Untitled.md",
+    "unpublished/fregment/오프라인에서 vscode 확장 프로그램 구성하기.md",
+    "unpublished/fregment/vscode-workspace.md",
+    "unpublished/fregment/vscode-setting-scope.md",
     "unpublished/fregment/vscode-remote-tunneling.md",
-    "2023-10-23-vscode-환경설정하기.md",
+    "unpublished/fregment/vscode-dotfiles.md",
+    "unpublished/fregment/2023-10-03-ros-vsc_사용해보기.md",
+    "unpublished/writing/2023-10-23-vscode-환경설정.md",
+    "unpublished/writing/vscode-server.md",
+    "unpublished/old/2023-10-01-docker-ARGS와 ENV는 어떻게 구분해야 하는가.md",
+    "unpublished/old/2022-08-18-linux-master_Iptable.md",
+    "unpublished/old/2021-07-21-Sequelize.MD",
+    "unpublished/old/2021-07-21-PM2.MD",
+    "unpublished/old/2021-07-20-linux-server-setting.MD",
+    "unpublished/old/2021-07-24-MySQL-error.md",
     "unpublished/writing/vscode 확장 프로그램 구성.md",
+    "unpublished/writing/vscode.md",
+    "unpublished/fregment/vscode-workspace 1.md",
+    "unpublished/writing/2023-10-22-docker-caution point when specify path.md",
     "GraphQl.md",
     "unpublished/fregment/vscode-codespace.md",
-    "unpublished/fregment/vscode-workspace.md",
     "unpublished/2023-09-15-c++-std:placeholders.md",
-    "unpublished/fregment/vscode-setting-scope.md",
-    "unpublished/fregment/vscode-dotfiles.md",
     "unpublished/drafts/2023-10-17-vscode extension.md",
     "unpublished/drafts/2023-10-14-vscode-devcontainer.md",
     "unpublished/drafts/2023-10-22-docker-caution point when specify path.md",
-    "unpublished/fregment/vscode server 로컬 익스텐션 구성하기.md",
-    "unpublished/fregment/2023-09-15-c++-std::decltype.md",
-    "unpublished/fregment/2023-10-03-ros-vsc_사용해보기.md",
-    "unpublished/fregment/2023-10-10-docker-docker_exec_script_추가하기.md",
-    "unpublished/writing/vscode-server.md",
-    "unpublished/writing/2023-10-16-vscode-server.md",
-    "unpublished/unpublished/2023-10-03-docker-volumes.md",
-    "unpublished/unpublished/2023-10-01-ros-빌드용_도커이미지_구성하기.md",
-    "unpublished/writing/2023-10-22-docker-caution point when specify path.md",
-    "unpublished/old/2023-10-12-ros-package_manifest_files.md",
-    "unpublished/old/2023-09-15-c++-constant_expression.md",
-    "unpublished/old/2023-09-15-c++-std-forward.md",
-    "unpublished/old/2021-07-20-linux-server-setting.MD",
     "unpublished/old",
-    "fregment/vscode-codespace.md",
     "unpublished",
     "fregment"
   ]
