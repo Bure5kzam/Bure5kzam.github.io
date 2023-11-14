@@ -1,8 +1,15 @@
+---
+layout: posts
+title: vscode의 세부적인 설정 범위 
+date: 2023-10-17 19:17
+category: vscode
+author: Bure5kzam
+tags:
+---
+
 ## vscode 설정의 종류
 
-이전 글에서 설정 기준은 크게 Default, User, Workspace가 있다고 설명했었다.
-
-사실 더 세부적인 vs code의 설정 적용 기준들이 있다.
+이전 글에서 설정 기준은 크게 Default, User, Workspace가 있다고 설명했는데, 더 세부적으로 살펴보면 다음과 같은 기준들이 있다.
 
 - 깃허브 유저
 - 프로필

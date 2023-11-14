@@ -2,7 +2,7 @@
 > Reference : 23-10-23 [Vscode  Reference](https://code.visualstudio.com/docs/editor/workspaces#_workspace-settings)
 > OS : ubuntu 20.04 - 22.04
 
-vscode에서 폴더를 열면 **열린 디렉토리 경로가 workspace의 root 경로로 지정되며, 열린 디렉토리에서 독립적인 독립적으로 재정의 된다**
+vscode에서 폴더를 열면 해당 디렉토리 경로가 workspace의 root 경로로 지정되며, 열린 디렉토리에서 독립적인 독립적으로 재정의 된다**
 
 ## workspace란
 

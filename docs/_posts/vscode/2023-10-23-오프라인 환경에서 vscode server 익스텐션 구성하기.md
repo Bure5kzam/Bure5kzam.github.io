@@ -1,9 +1,19 @@
+---
+layout: posts
+title: 오프라인에서 vscode 확장 프로그램 구성하기
+date: 2023-10-23 19:17
+category: vscode
+author: Bure5kzam
+tags:
+---
 
 CLI 로 확장 프로그램을 관리하는 방법이 있었음
 
 https://code.visualstudio.com/docs/editor/extension-marketplace#_configuring-extensions
 
-`code --install-extension {<extension-id> | <extension-vsix-path>`
+```bash
+code --install-extension {<extension-id> | <extension-vsix-path>
+```
 
 설치하려면 두 가지 방법이 있다.
 - 마켓 플레이스 확장 프로그램 id를 지정해 설치
