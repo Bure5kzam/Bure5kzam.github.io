@@ -35,9 +35,9 @@ vscode 설정은 크게 나누면 `기본 설정`, `유저 설정`, `워크스�
 	2. 경로 : `${workspaceFolder}/.vscode/settings.json`
 	2. `workspaceFolder`는 현재 열린 프로젝트 루트 경로로 치환되는 vscode 자체 변수다.
 
-더 깊게 들어가면 더 많은 설정 파일이 있다. (ssh 접속을 하거나 멀티 루트 워크스페이스를 구성하면 더 복잡해진다)지금은 다루지 않는다.
+vscode를 사용하다보면 더 많은 설정 파일을 수정해야할 수도 있다. ssh 접속을 하거나 멀티 루트 워크스페이스 기능을 사용하면 여기서 설명하지 않은 설정 파일을 수정해야 할 수도 있다. 
 
-[vscode 설정 범위]({% post_url 2023-10-17-vscode-setting-scope %})
+[vscode setting.json more]({% post_url 2023-10-17-vscode-setting-scope %}) 참고
 
 > - defaultSetting은 프로그램에 하드코딩되어있다는 [Stack overflow](https://stackoverflow.com/questions/53369371/what-is-the-location-of-the-default-settings-file-of-vscode) 글이 있었다.
 >
@@ -67,9 +67,9 @@ Json 수정과 UI 수정 모두 지원하니 편한 대로 고르자
 
 ## 다른 설정 파일들
 
-위에서 대표적인 설정 파일로 `settings.json` 파일을 언급했었다.
+앞서 vscode 대표적인 설정 파일인 `settings.json` 파일을 언급했었다.
 
-`settings.json` 은 에디터, 터미널 같이 주로 editor로서의 설정값을 가진 파일이다.
+`settings.json` 은 vscode 편집기 관련 설정이 저장된 파일이다.
 
 vscode에서 디버깅, 실행, 자동완성, 컴파일같은 개발 기능을 사용하려면 **익스텐션을 설치**하고 **익스텐션 설정 파일**을 적절하게 **수정**해줘야한다.
 
@@ -107,7 +107,7 @@ jsconfig.json
 
 세부적인 내용은 향후 시간이 되면 다루겠다.
 
-[dotfiles]({{site.baseurl}}/vscode/vscode-dotfiles)
+<!-- [dotfiles]({{site.baseurl}}/vscode/vscode-dotfiles) -->
 
 > [vscode 도큐먼트, Programming Launguage](https://code.visualstudio.com/docs/languages/overview)
 > 단축키 지정 파일인 keybindings.json도 있는데 아직 문서를 확인하지 못함.
