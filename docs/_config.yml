@@ -250,8 +250,7 @@ compress_html:
 # Defaults
 defaults:
   #_posts
-  - 
-    scope:
+  - scope:
       path: "_posts/algo"
       type: posts
     values:
@@ -276,6 +275,27 @@ defaults:
     values:
       layout: single
 
+      author: Bure5kzam
+      author_profile: true
+
+      toc: true
+      toc_sticky: true
+
+      read_time: true
+      comments: true # true
+      share: true
+      related: true
+      repository: Bure5kzam/GithubBlog
+      show_date: true
+
+  # vscode 관련 폴더
+  - scope:
+      path: "_posts/vscode"
+      type: posts
+    values:
+      layout: single
+
+      category: vscode
       author: Bure5kzam
       author_profile: true
 
