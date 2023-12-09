@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: single
 title: 
 date: 2023-03-16 23:40
 category: ubuntu

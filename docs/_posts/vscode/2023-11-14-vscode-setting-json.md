@@ -1,5 +1,4 @@
 ---
-layout: posts
 title: vscode setting.json
 date: 2023-11-14 22:12
 category: vscode
