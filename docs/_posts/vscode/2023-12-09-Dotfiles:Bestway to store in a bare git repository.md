@@ -9,9 +9,12 @@ github로 dotfile 환경을 업로드하고 bash 기반으로 다운로드, 실�
 >
 > https://www.atlassian.com/git/tutorials/dotfiles
 
-## dotfile 관리용 로컬 git 저장소 생성
+
+## 로컬에 dotfile 관리용 git 저장소 생성하기
 
 ```bash
+cd $HOME
+
 git init --bare $HOME/.cfg
 # 깃 베어 저장소를 ~/.cfg를 생성
 
@@ -21,9 +24,14 @@ alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 config config --local status.showUntrackedFiles no
 # -local 플래그를 추가해서 우리가 정확히 트래킹하지 않는 파일들을 숨긴다. 
 # config status와 다른 명령어를 입력할 때, 관심없는 파일들은 untracted 되어 보이지 않게 될 것이다.
+```
 
+`alias` 로 지정한 별칭은 새로 쉘을 생성하면 사라진다.
+
+새로 쉘을 생성할 때마다 config 사용하려면 방금 추가한 정의를 .bash 추가한다.
+
+```bash
 echo "alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'" >> $HOME/.bashrc
-# 방금 추가한 정의를 .bash에 추가해서 새 쉘에서도 사용할 수 있게 한다.
 ```
 
 ### git bare의 역할과 목적
@@ -54,8 +62,6 @@ echo "alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'" >> $H
 
 ```bash
 config status
-config add .vimrc
-config commit -m "Add vimrc"
 config add .bashrc
 config commit -m "Add bashrc"
 config push
@@ -143,41 +149,65 @@ xargs는 stdout의 내용을 활용해 다른 명령어를 실행할 때 사용�
 로 치환되어 실행된다.
 
 
-
-
 총 정리하면 다음과 같다.
 
 ```bash
+#!/bin/bash
+
+# URL_GIT_DOTFILE_REPO 변수에 저장된 값 가져오기
+REPO_URL=${URL_GIT_DOTFILE_REPO:-https://github.com/Bure5kzam/dotfile.git}
+TODAY=$(DATE +%Y-%m-%d_%H-%M-%S)
 cd $HOME
 
+# 이미 .cfg 디렉토리가 존재하는지 확인
+if [ -d "$HOME/.cfg" ]; then
+  echo ".cfg directory already exists, backing up to .config-backup"
+  
+  # 중복된 파일 백업 폴더 생성
+  mkdir -p $HOME/.config-backup
+  
+  # 기존 .cfg 디렉토리를 백업 디렉토리로 이동
+  mv $HOME/.cfg $HOME/.config-backup/.cfg_backup_$TODAY
+fi
+
 # dotfile 저장소 구성
-git clone --bare https://bitbucket.org/durdn/cfg.git $HOME/.cfg
+git clone --bare "$REPO_URL" $HOME/.cfg || { echo "Clone failed"; exit 1; }
 
 # config 명령어 생성
 function config {
    /usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME $@
 }
 
-# 중복된 파일 백업 폴더 생성
-mkdir -p .config-backup
-
 # dotfile 설정 적용
 config checkout
 
 # 실행했을 때 에러가 났으면 백업 프로세스 실행
 if [ $? = 0 ]; then
-  echo "Checked out config.";
-  else
-    echo "Backing up pre-existing dot files.";
-    config checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | xargs -I{} mv {} .config-backup/{}
-fi;
+  echo "Checked out config."
+else
+  echo "Backing up pre-existing dot files."
+  BACKUP_DIR=dotfiles_backup
+  # 중복된 파일 백업 폴더 생성
+  mkdir -p $HOME/$BACKUP_DIR/$TODAY
+  
+  # 중복된 파일을 .config-backup으로 이동
+  config checkout 2>&1 | egrep "^\s+.*" | awk {'print $1'} | awk -F '/' {' print $1 '} | xargs -I{} mv {} $HOME/$BACKUP_DIR/$TODAY/{}
+fi
 
 config checkout
 config config status.showUntrackedFiles no
+
+
 ```
+
+쉘 환경변수 `URL_GIT_DOTFILE_REPO` 에 자신의 dotfile 저장소를 저장해두면 된다.
 
 ---
 
+## 로컬에 dotfile 관리용 git 저장소 생성하기(curl)
+
+dotfile 저장소의 다른 브랜치에 스크립트 파일만 모아두었다.
+
 ```bash
-curl -Lks https://raw.githubusercontent.com/Bure5kzam/TIL/main/a.txt | /bin/bash
+curl -Lks https://raw.githubusercontent.com/Bure5kzam/dotfile/script/dotfiles/set_to_local.sh | /bin/bash
 ```
