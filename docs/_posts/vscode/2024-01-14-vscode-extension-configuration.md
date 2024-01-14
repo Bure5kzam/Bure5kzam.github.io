@@ -1,10 +1,10 @@
 ---
 layout: single
 title: vscode 확장 프로그램 구성하기
-date: 2023-10-23 19:17
-category: vscode
+date: 2024-01-14 19:17
 author: Bure5kzam
-tags:
+tags: [vscode, snippet]
+
 ---
 
 확장 프로그램은 문서편집기에 불과한 기본 vscode를 IDE에 가깝게 만들어준다.
@@ -43,7 +43,7 @@ vsix 파일은 마켓 플레이스에서 미리 받아둬야 한다.
 > [vscode document](https://code.visualstudio.com/docs/remote/ssh#_managing-extensions) -->
 
 
-<!-- ```json
+```json
 {
   // See https://go.microsoft.com/fwlink/?LinkId=733558
   // for the documentation about the tasks.json format
@@ -75,8 +75,7 @@ vsix 파일은 마켓 플레이스에서 미리 받아둬야 한다.
 	  }
     }
   ]
-} -->
+} 
 
 ```
-
-<!-- [vscode document](https://code.visualstudio.com/docs/editor/tasks) -->
+[vscode document](https://code.visualstudio.com/docs/editor/tasks)

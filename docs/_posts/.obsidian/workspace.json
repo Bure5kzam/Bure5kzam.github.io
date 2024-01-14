@@ -4,99 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "7c13d4dfe6b05db6",
+        "id": "1a0cc36c75f6a664",
         "type": "tabs",
         "children": [
           {
-            "id": "b56efaff49d3b714",
-            "type": "leaf",
-            "state": {
-              "type": "localgraph",
-              "state": {
-                "file": "unpublished/writing/2023-11-12 Jekyll.md",
-                "options": {
-                  "collapse-filter": true,
-                  "search": "",
-                  "localJumps": 1,
-                  "localBacklinks": true,
-                  "localForelinks": true,
-                  "localInterlinks": false,
-                  "showTags": false,
-                  "showAttachments": false,
-                  "hideUnresolved": false,
-                  "collapse-color-groups": true,
-                  "colorGroups": [],
-                  "collapse-display": true,
-                  "showArrow": false,
-                  "textFadeMultiplier": 0,
-                  "nodeSizeMultiplier": 1,
-                  "lineSizeMultiplier": 1,
-                  "collapse-forces": true,
-                  "centerStrength": 0.518713248970312,
-                  "repelStrength": 10,
-                  "linkStrength": 1,
-                  "linkDistance": 250,
-                  "scale": 1,
-                  "close": false
-                }
-              }
-            }
-          },
-          {
-            "id": "87c05a2c17f27999",
+            "id": "6904cba3d6c41118",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "unpublished/writing/2023-11-12 Jekyll.md",
+                "file": "vscode/2023-11-14-vscode-setting-json.md",
                 "mode": "source",
                 "source": false
               }
-            },
-            "group": "71e2377171f85e50"
-          }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "8a4e7731f9361324",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "ae2f08017977c01e",
-            "type": "leaf",
-            "state": {
-              "type": "localgraph",
-              "state": {
-                "file": "unpublished/writing/2023-11-12 Jekyll.md",
-                "options": {
-                  "collapse-filter": true,
-                  "search": "",
-                  "localJumps": 1,
-                  "localBacklinks": true,
-                  "localForelinks": true,
-                  "localInterlinks": false,
-                  "showTags": false,
-                  "showAttachments": false,
-                  "hideUnresolved": false,
-                  "collapse-color-groups": true,
-                  "colorGroups": [],
-                  "collapse-display": false,
-                  "showArrow": false,
-                  "textFadeMultiplier": 0,
-                  "nodeSizeMultiplier": 1,
-                  "lineSizeMultiplier": 1,
-                  "collapse-forces": true,
-                  "centerStrength": 0.518713248970312,
-                  "repelStrength": 10,
-                  "linkStrength": 1,
-                  "linkDistance": 250,
-                  "scale": 1,
-                  "close": false
-                }
-              }
-            },
-            "group": "71e2377171f85e50"
+            }
           }
         ]
       }
@@ -148,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 463.5
+    "width": 463.5,
+    "collapsed": true
   },
   "right": {
     "id": "b4996101817f701a",
@@ -164,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "unpublished/writing/2023-11-12 Jekyll.md",
+                "file": "vscode/2023-11-14-vscode-setting-json.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -181,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "unpublished/writing/2023-11-12 Jekyll.md",
+                "file": "vscode/2023-11-14-vscode-setting-json.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -204,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "unpublished/writing/2023-11-12 Jekyll.md"
+                "file": "vscode/2023-11-14-vscode-setting-json.md"
               }
             }
           }
@@ -225,21 +147,26 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "87c05a2c17f27999",
+  "active": "6904cba3d6c41118",
   "lastOpenFiles": [
+    "vscode/2023-10-23-vscode 설정하기.md",
     "vscode/2023-11-14-vscode-setting-json.md",
+    "vscode/Untitled.md",
+    "vscode/2023-10-23-오프라인 환경에서 vscode server 익스텐션 구성하기.md",
+    "vscode/2023-10-17-vscode-setting-scope.md",
+    "unpublished/writing/2023-12-31-obsidian-vault.md",
+    "assets/image/RAID-Data_striping_example.svg.png.md",
+    "assets/image",
+    "assets",
+    "unpublished/writing/2023-11-12 Jekyll.md",
     "vscode/2023-10-21-vscode 확장 프로그램 구성.md",
     "vscode/vscode 확장 프로그램 구성.md",
-    "vscode/2023-10-17-vscode-setting-scope.md",
     "unpublished/fregment/2023-10-17-vscode-setting-scope.md",
     "unpublished/fregment/vscode 커맨드.md",
-    "vscode/2023-10-23-오프라인 환경에서 vscode server 익스텐션 구성하기.md",
     "vscode/vscode 커맨드.md",
     "unpublished/fregment/2023-10-23-오프라인 환경에서 vscode server 익스텐션 구성하기.md",
     "unpublished/fregment/github ssh 연결하기.md",
-    "unpublished/writing/2023-11-12 Jekyll.md",
     "unpublished/writing/vscode extension 구성.md",
-    "vscode/2023-10-23-vscode 설정하기.md",
     "unpublished/writing/vscode 확장 프로그램 구성.md",
     "unpublished/fregment/오프라인 환경에서 vscode server 익스텐션 구성하기.md",
     "unpublished/fregment/vscode-setting-scope.md",
@@ -251,9 +178,6 @@
     "unpublished/fregment/vscode-remote-tunneling.md",
     "unpublished/fregment/vscode-dotfiles.md",
     "unpublished/fregment/2023-10-03-ros-vsc_사용해보기.md",
-    "unpublished/writing/2023-10-23-vscode.md",
-    "unpublished/writing/2023-10-16-vscode-server.md",
-    "unpublished/writing/2023-10-22-docker-caution point when specify path.md",
     "unpublished/old",
     "unpublished",
     "fregment"

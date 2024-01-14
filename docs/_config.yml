@@ -294,7 +294,6 @@ defaults:
       type: posts
     values:
       layout: single
-
       category: vscode
       author: Bure5kzam
       author_profile: true

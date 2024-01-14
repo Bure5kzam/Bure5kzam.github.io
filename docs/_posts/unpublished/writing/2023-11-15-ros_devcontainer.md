@@ -32,12 +32,12 @@ ws_[project]
 
 ```json
 {
-    "name": "ROS 2 Development Container",
     // UI에 표시되는 devcontainer 이름
+    "name": "ROS 2 Development Container",
     "privileged": true,
-    "remoteUser": "USERNAME",
     // 컨테이너 내에서 사용할 유저 계정.
     // 컨테이너 유저의 uid / gid를 로컬 유저와 일치하도록 업데이트해 마운트된 바운드 공간에서의 권한문제를 해결할 수 있다고함
+    "remoteUser": "USERNAME",
     "build": {
         "dockerfile": "Dockerfile",
         "args": {
@@ -46,11 +46,11 @@ ws_[project]
         }
     },
 
+    // 컨테이너 내 쉘의 시작 경로
     "workspaceFolder": "/home/ws",
-    // devcontainer 시작 후 쉘 시작 경로
-    "workspaceMount": "source=${localWorkspaceFolder},target=/home/ws/src,type=bind",
     // vscode에서 워크스페이스로 오픈한 폴더 내 경로를 컨테이너 내 파일시스템에 마운트함
-    // localWorkspaceFolder는 워크스페이스 루트 경로를 나타내는 vscode 환경 변수
+    // localWorkspaceFolder는 워크스페이스 루트 경로를 나타내는 vscode 변수
+    "workspaceMount": "source=${localWorkspaceFolder},target=/home/ws/src,type=bind",
     "customizations": {
         "vscode": {
             "extensions":[

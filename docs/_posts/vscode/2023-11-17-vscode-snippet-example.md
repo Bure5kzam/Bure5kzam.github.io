@@ -1,10 +1,8 @@
 ---
-title: vscode, c++, ubuntu) 스니펫 만들기
-date: 2023-11-15 22:36
-category: 
-author: 
-tags: []
-summary: 
+title: vscode 스니펫 만들기 (c++)
+date: 2023-11-17 22:36
+tags: [vscode, snippet]
+
 ---
 
 > ubuntu 22.04

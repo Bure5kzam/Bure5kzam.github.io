@@ -1,6 +1,7 @@
 ---
 title: dotfile 설정 동기화 환경 만들기
 category: vscode
+published : False
 ---
 
 github로 dotfile 환경을 업로드하고 bash 기반으로 다운로드, 실행하는 방법에 관한 글

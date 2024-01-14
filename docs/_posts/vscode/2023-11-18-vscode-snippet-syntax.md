@@ -1,7 +1,9 @@
 ---
 layout: single
-title: vscode, ubuntu) 스니펫 문법
-date: 2023-11-15 22:36
+title: vscode 스니펫 문법
+date: 2023-11-18 22:36
+tags: [vscode, snippet]
+
 ---
 
 > ubuntu 22.04
