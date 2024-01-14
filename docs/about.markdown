@@ -3,6 +3,7 @@ layout: single
 title: About
 permalink: /about/
 author: Bure5kzam
+author_profile: true
 ---
 
 연혁
