@@ -9,6 +9,8 @@ author_profile: true
 
 ## History
 
+### Business
+
 - **2024** **Current...**
 - **2023** Moved to hyundai-wia robot sowftware 
     - RoS2 humble
@@ -19,7 +21,7 @@ author_profile: true
     - Developed C# desktop application - (Parking robot control system)
     - Server provisioning and SW deployment with docker
 
-## Academy
+### Academy
 
 - **2022** Completed the Embedded Systems course in the 5th cohort of SSAFY(Samsung SW Academy for youth)
     - Course Learning for C++ and C for Computer Science Majors
