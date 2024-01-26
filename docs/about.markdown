@@ -19,7 +19,8 @@ author_profile: true
     - 
 - **2022** Join in hyundai-wia "Robot control system part"
     - Developed C# desktop application - (Parking robot control system)
-    - Server provisioning and SW deployment with docker
+    - Server provisioning and SW deployment
+    - Collaboration with a Chinese Robotics Technology Company
 
 ### Academy
 
