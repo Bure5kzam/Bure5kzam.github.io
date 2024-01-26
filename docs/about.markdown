@@ -6,13 +6,32 @@ author: Bure5kzam
 author_profile: true
 ---
 
-연혁
 
-- **2023** 현대위아 로봇 소프트웨어팀 이동
-    - 로봇 소프트웨어 개발 - Python 3.8, C++17
-- **2022** 현대위아 SF솔루션개발팀 입사
-    - 로봇 관제 시스템 개발 - C#
-    - 서버 프로비저닝 및 도커화 - Ubuntu
-- **2022** SSAFY 5기 임베디드 과정 수료
-- **2021** 서울과기대 컴퓨터 공학과 졸업
-- **2020** KIST [WRL](https://wrl.kist.re.kr/) 연구인턴
+## History
+
+- **2024** **Current...**
+- **2023** Moved to hyundai-wia robot sowftware 
+    - RoS2 humble
+        - Python 3.8
+        - C++17
+    - 
+- **2022** Join in hyundai-wia "Robot control system part"
+    - Developed C# desktop application - (Parking robot control system)
+    - Server provisioning and SW deployment with docker
+
+## Academy
+
+- **2022** Completed the Embedded Systems course in the 5th cohort of SSAFY(Samsung SW Academy for youth)
+    - Course Learning for C++ and C for Computer Science Majors
+
+- **2021** Graduated from the Computer Science department
+    - **2017-2019** Repoblic of Korea Army Service 
+    - **2016** Activity : University student Council
+        - Head of Information and Communication Department
+    - **2015** Enrolled in Seoul national university of science and technology
+- **2020** Join in undergraduate research intern 
+    - KIST [WRL](https://wrl.kist.re.kr/) Labs
+    - Implementation of a Virtual Environment for Research on 3D Virtual Reality Motion Sickness ****No**Paper Contribution!!!)**
+- **2014** Graduated from Centum highschool 
+    - **2014** Awarded In legional KoI for high shcool student (4th) 
+    - **2013** Awarded In legional KoI for high shcool student <!-- (7th) -->
