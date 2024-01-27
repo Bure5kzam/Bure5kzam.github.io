@@ -34,7 +34,7 @@ words_per_minute: 200
 
 # Comments
 comments: 
-  provider: "facebook" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
+  provider: "utterances" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   # disqus:
   #   shortname: # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   # discourse:
