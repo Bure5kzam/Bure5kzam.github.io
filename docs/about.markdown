@@ -5,6 +5,9 @@ permalink: /about/
 author: Bure5kzam
 author_profile: true
 ---
+---
+---
+
 
 
 ## History
@@ -16,7 +19,7 @@ author_profile: true
     - RoS2 humble
         - Python 3.8
         - C++17
-    - 
+    
 - **2022** Join in hyundai-wia "Robot control system part"
     - Developed C# desktop application - (Parking robot control system)
     - Server provisioning and SW deployment

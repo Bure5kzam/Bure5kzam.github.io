@@ -1,0 +1,24 @@
+
+{% if include.section %}
+  {% assign entries = site[include.collection] | where_exp : "item", "item.id contains include.section" %}
+{% else %}
+  {% assign entries = site[include.collection] %}
+{% endif %}
+
+{% if include.sort_by %}
+  {% assign entries = entries | sort: include.sort_by %}
+{% endif %}
+
+{% if include.sort_order == 'reverse' %}
+  {% assign entries = entries | reverse %}
+{% endif %}
+
+<div class="entries-grid" style="display: flex">
+
+{%- for post in entries -%}
+  {%- unless post.hidden -%}
+    {% include archive-single.html type='grid'%}
+  {%- endunless -%}
+{%- endfor -%}
+
+</div>

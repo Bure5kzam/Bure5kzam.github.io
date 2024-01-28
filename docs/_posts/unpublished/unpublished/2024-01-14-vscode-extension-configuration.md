@@ -5,6 +5,7 @@ date: 2024-01-14 19:17
 author: Bure5kzam
 tags: [vscode, snippet]
 summary : 온/오프라인 환경에서 확장 프로그램을 설치하는 방법(미완)
+published : false
 ---
 
 **인터넷이 있으면** 마켓 플레이스 기능을 이용해서 설치할 수 있다. ( ctrl + shift + x )

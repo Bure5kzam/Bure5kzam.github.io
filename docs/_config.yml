@@ -226,6 +226,7 @@ plugins:
 category_archive:
   type: liquid
   path: _layout/
+
 tag_archive:
   type: liquid
   path: /tags/
@@ -244,10 +245,17 @@ tag_archive:
 
 # HTML Compression
 # - https://jch.penibelst.de/
+
 compress_html:
   clippings: all
   ignore:
     envs: development
+
+# Collections
+collections:
+  vscode:
+    output: true
+    permalink: /:collection/:path/
 
 # Defaults
 defaults:
@@ -294,7 +302,7 @@ defaults:
   - scope:
       path: "_posts/vscode"
       type: posts
-      
+
     values:
       layout: single
       category: vscode

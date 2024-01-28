@@ -1,5 +1,4 @@
 ---
-layout: single
 title: vscode의 세부적인 설정 범위 
 date: 2023-10-17 19:17
 category: vscode
