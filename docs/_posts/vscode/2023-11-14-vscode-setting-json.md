@@ -34,7 +34,7 @@ vscode 설정은 크게 나누면 `기본 설정`, `유저 설정`, `워크스�
 
 vscode를 사용하다보면 더 많은 설정 파일을 수정해야할 수도 있다. ssh 접속을 하거나 멀티 루트 워크스페이스 기능을 사용하면 여기서 설명하지 않은 설정 파일을 수정해야 할 수도 있다. 
 
-[vscode setting.json more]({% post_url 2023-10-17-vscode-setting-scope %}) 참고
+[vscode setting.json more]({% post_url /vscode/2023-10-17-vscode-setting-scope %}) 참고
 
 > - defaultSetting은 프로그램에 하드코딩되어있다는 [Stack overflow](https://stackoverflow.com/questions/53369371/what-is-the-location-of-the-default-settings-file-of-vscode) 글이 있었다.
 >
