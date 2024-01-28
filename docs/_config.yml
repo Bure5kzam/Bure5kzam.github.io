@@ -294,11 +294,13 @@ defaults:
   - scope:
       path: "_posts/vscode"
       type: posts
+      
     values:
       layout: single
       category: vscode
       author: Bure5kzam
       author_profile: true
+      classes : wide
 
       toc: true
       toc_sticky: true

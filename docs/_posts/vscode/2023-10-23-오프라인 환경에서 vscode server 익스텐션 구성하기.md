@@ -5,7 +5,9 @@ date: 2023-10-23 19:17
 ---
 
 ## Overview 
-먼저 콘솔용 vscode 제어 명령어인 `code`가 있어야 한다.[docs link, vscode](https://code.visualstudio.com/docs/editor/extension-marketplace#_configuring-extensions)
+먼저 콘솔용 vscode 제어 명령어인 `code`가 있어야 한다.
+
+[docs link, vscode](https://code.visualstudio.com/docs/editor/extension-marketplace#_configuring-extensions)
 
 
 ```bash
@@ -15,14 +17,22 @@ bure@burepool:~$ code -v
 x64
 ```
 
-마켓에서 extension 패키지 파일인 `vsix` 파일을 마켓에서 다운받으면 `code` 명령어로 설치할 수 있다. [docs link, vscode, vsix](https://code.visualstudio.com/docs/editor/extension-marketplace#_common-questions)
+---
+
+마켓에서 extension 패키지 파일인 `vsix` 파일을 마켓에서 다운받으면 `code` 명령어로 설치할 수 있다.
+
+[docs link, vscode, vsix](https://code.visualstudio.com/docs/editor/extension-marketplace#_common-questions)
 
 ```bash
 # install extension in cli
 bure@burepool:~$ code --install-extension {<extension-id> | <extension-vsix-path>
 ```
 
-`vsix`파일은 확장 프로그램 웹 페이지에서 `version history` 부분에서 받을 수 있다. (23년 12년 기준) [download link, vscode extension market](https://marketplace.visualstudio.com/vscode)
+---
+
+`vsix`파일은 확장 프로그램 웹 페이지에서 `version history` 부분에서 받을 수 있다. (23년 12년 기준)
+
+[download link, vscode extension market](https://marketplace.visualstudio.com/vscode)
 
 <!-- 마켓에서 확장프로그램을 받아 로컬에서 설치하는 방법 설명 글이 있었음. 
 
