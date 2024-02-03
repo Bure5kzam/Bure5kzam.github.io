@@ -5,12 +5,8 @@ permalink: /about/
 author: Bure5kzam
 author_profile: true
 ---
----
----
 
-
-
-## History
+## Bio
 
 ### Business
 
