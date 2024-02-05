@@ -17,7 +17,11 @@ classes: wide
 
 # Overview
 
+<<<<<<< HEAD
 > watch out
+=======
+> **watch out **
+>>>>>>> 6b74531fb599005d7eb7debace21764ccfd71571
 > 작성 중인 글
 {: .notice--warning}
 
