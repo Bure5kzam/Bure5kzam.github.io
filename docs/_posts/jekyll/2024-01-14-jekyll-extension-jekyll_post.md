@@ -1,6 +1,7 @@
 ---
 layout : single
 title: Jekyll, vscode extension, jekyll-post 기본 템플릿 설정하기
+category : jekyll
 # author: User
 # summary: Summary of the article
 ---

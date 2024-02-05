@@ -17,43 +17,67 @@ classes: wide
 
 # Overview
 
-회사 팀을 옮기면서 IDE를 Visual studio에서 Visual studio로 바꾸게 되었다.
+> watch out
+> 작성 중인 글
+{: .notice--warning}
 
-일주일 정도 사용해보니
 
-- 지원하는 os 폭이 넓음. => ubuntu, window 모두 사용할 수 있음.
-- ssh 접속 지원 => 디바이스에 ssh로 접속해서 사용할 수 있음.
-- 플러그인 세팅이 다양한 => 기능이 많음, 설정파일을 수정하면 커스터마이징도 할 수 있음.
+팀을 옮기면서 IDE를 Visual studio에서 Visual studio로 바꾸게 되었습니다.
 
-앞으로 계속 사용할 것 같아 설정 과정을 기록으로 남긴다.
+개인적으로 비교되는 장점은 다음과 같습니다.
+
+- ubuntu에서도 사용할 수 있습니다.
+- ssh로 다른 디바이스에 접속해서 사용할 수 있음.
+- 확장프로그램이 다양하며 snippet, lint, debugger 같은 개념이 잘 구성되어있음.
+- 커스터마이징 기능이 다양해서 생산성을 향상시킬 수 있음 **(설정에 익숙하다면)**
+
+팀원들과의 효율적인 개발라이프를 위해 설정 과정을 기록으로 남깁니다.
 
 # vscode의 강력한 기능들
 
-## 편집기 설정하기 : setting.json
+- debugger
+  - debug point를 걸어 런타임 프로세스에서 변수나 스택 프레임 주소를 확인할 수 있음.
+- compiler
+  - 코드를 빌드해 실행 파일을 생성할 수 있음 (c계열 언어들, js 기반 프레임워크들)
+- intelisence
+  - 변수, 모듈, 라이브러리 명을 칠 때 자동완성을 제공 (+ 파일 위치 파악)
+- lint
+  - 코드 스타일 규약 적용 (ex 파이썬의 pep8, c++의 google core guideline 등)
+- Formatter : 
+  - 자동 줄바꿈 및 정렬 제공. 주로 lint와 함께 많이씀
+- Remote connection
+  - 다른 기기의 파일 시스템 접속, docker container에 접속 지원
+- git history : 파일의 수정 내역, 소스코드 비교 지원
+- Snippet
+  - 축약어로 사용자 정의 소스코드 삽입하는 기능
+- Task
+  - 터미널에서 사용하는 커맨드 도구 (npm, tsc, python 등)를 편하게 실행하는 기능
+- Devcontainer
+  - 폴더 별로 사용할 도커 컨테이너 구성을 저장해두는 기능. dockerfile이나 docker-compose 파일을 이용할 수 있음.
 
-vscode는 경로나 환경 따라 설정을 달리할 수 있어 커스터마이징 측면에서 강력하다.
+# 콘셉트 
 
-(외부에서 ssh로 접속했을 때 제공되는 설정도 구성할 수 있을 정도다)
+## 에디터 설정하기 : setting.json
 
-하지만 그만큼 설정 파일이 다양하고 각자 다른 적용 조건과 우선순위가 있어서 조금 복잡하다 (열 댓개 정도밖에 안된다!)
+vscode의 설정 내용은 `setting.json` 파일에 json 형식으로 저장됩니다.
+
+`setting.json`은 여러 종류가 있으며, 가장 우선순위가 높은 파일의 설정이 적용됩니다. 
+
+약 열 개 정도 되며 상세 내용은 관련 포스트 참고바랍니다.
 
 빈번하게 설정하는 것들은
 
-기본적으로 모든 vscode 프로세스에 공통 적용되는 `defaultsetting.json` 이 있고,
+모든 vscode 인스턴스에 공통 적용되는 `defaultsetting.json`, 윈도우/리눅스 유저별로 적용되는 home dir의 `setting.json`, 
 
-현재 OS 유저에 적용되는 홈디렉토리의 `setting.json` 도 있다.
+그리고 vscode에서 폴더를 열면 열린 폴더에 생성되어 적용되는 `.vscode/.setting.json`이 있습니다.
 
-그리고 현재 열린 폴더 안에 있는 파일들에 적용되는 `.vscode/.setting.json`이 있다.
-
-(정리하고보니 조건이 까다로울 수록 우선순위가 높은 느낌이 있다. 더 궁금하면 관련 포스트 참고)
+(적용 우선순위는 `defaultsetting.json` < `~/setting.json` < `pwd/.vscode/.setting.json` 순서로 점점 높아집니다.)
 
 <br/>
 
-설정 내용은 너무 많아서 [vscode 공식 페이지 링크](https://code.visualstudio.com/docs/getstarted/settings#_default-settings)로 대신한다.
+`setting.json`에서 수정할 수 있는 내용은 너무 많아서 [vscode 공식 페이지 링크](https://code.visualstudio.com/docs/getstarted/settings#_default-settings)로 대체합니다.
 
-vscode 화면 내 특정 좌표에 뜬금없이 시뻘건 세로 선을 그을 수 있을 정도로 이상한 것들도 많다..
-
-시간 나면 사용하는 수정 사항 위주로 올려보겠다.
+시간 나면 사용하는 수정 사항 위주로 올려보겠습니다.
 
 **관련 포스트**
 
@@ -62,25 +86,13 @@ vscode 화면 내 특정 좌표에 뜬금없이 시뻘건 세로 선을 그을 �
    section='setting' %}
 
 
-## 확장 프로그램 : Extension
+## 확장 프로그램 : Extension- debugger : 프로세스에 debug point를 걸어 런타임 중간에 변수나 스택 프레임 주소를 확인할 수 있음.
 
-기본 vscode는 단순 텍스트 편집 프로그램에 불과하고, 확장 프로그램을 설치해야 개발 툴로 이용할 수 있다.
+확장 프로그램은 단순한 문서 편집 프로그램인 vscode를 개발툴로 만들어 줍니다.
 
-나중에 용도별로 프로필을 생성해서 확장 프로그램을 구성해두면 vscode 하나만으로 범용 텍스트 툴로 사용할 수 있다.
+생산성 향상에 중요한 역할을 하기 때문에 언어별 intellisence나 권장 확장 프로그램들은 설치하시는게 좋습니다.
 
-확장 프로그램으로 추가할 수 있는 기능들을 하나하나 나열해보면...
-
-- debugger : 프로세스에 debug point를 걸어 런타임 중간에 변수나 스택 프레임 주소를 확인할 수 있음.
-- compiler : 코드를 빌드해 실행 가능판 파일을 생성할 수 있음 (c계열 언어들, js 기반 프레임워크들)
-- intelisence : 변수, 모듈, 라이브러리 명을 칠 때 자동완성을 제공 (+ 파일 위치 파악)
-- lint : 소스코드 내 불필요한 부분 첨삭, 코드 스타일 규약(pep8, c++ core guideline 등)의 적용 및 유효성 검증
-- Formatter : 언어별 문법 오류가 안생기는 선에서 줄바꿈 및 정렬 기능 제공. 주로 lint와 함께 많이씀
-- 원격 접속 : 다른 기기에 있는 파일을 열 수 있음. ssh 접속이라 가장 컨테이너에도 접속 가능.
-- 이력 관리 : 파일의 수정 히스토리 확인, 커밋 별 수정 세부 사항 비교  
-- ~~DB 뷰어~~
-- ~~기타~~
-	- ~~가독성 유틸리티~~
-	- ~~커맨드 명령어 단축키~~
+확장프로그램 구성을 용도별로 프로필로 저장해두면 필요할 때 전환해서 사용할 수 있음 (파이썬용 프로필, 마크다운용 프로필 등)
 
 **관련 포스트**
 
@@ -91,34 +103,40 @@ section='extension' %}
 
 ## Profile
 
-<!-- 위에서 vscode는 설정을 `setting.json` 비슷한 이름의 파일들로 관리한다고 설명했다. 
--->
 
-프로필은 vscode 설정을 용도별로 나눠서 필요한 설정만 활성화시킬 수 있는 기능이다.
+프로필은 vscode 설정을 용도별로 나눠서 필요한 설정만 활성화시킬 수 있는 기능입니다.
 
-~~예전에 atom 편집기 쓸 때 언어별 플러그인이 다양했던건 좋았는데, js, c++, python 구분없이 짬뽕이다보니 키는데 한세월이던 때를 떠올리면 아주 은혜로운 기능이다...~~
+~~예전에 atom 쓸 때 js, c++, python 구분없이 짬뽕이다보니 키는데 한세월이던 때를 떠올리면 아주 은혜로운 기능입니다...~~
 
-[vscode 도큐먼트 : Profile](https://code.visualstudio.com/docs/editor/profiles) 에는 다음과 같은 설명이 있다.
+프로필에서 구성할 수 있는 항목들은
 
-> 프로필을 선택하면 현재 워크스페이스 설정과 연동되며, 해당 폴더를 열 때마다 워크스페이스에 지정된 프로필이 활성화된다. 
-> 워크 스페이스 활성화 시에 마지막으로 사용한 프로필 정보가 남아 있으면 프로필은 해당 관련 프로필로 전환된다.
+- Settings - 프로필의 `setting.json`
+- Extensions - 현재 프로필의 확장 프로그램 목록
+- UI state - 뷰 배치 위치, 시각적인 뷰와 액션
+- Keybindings - 프로필별 키 바인딩 파일인 `keybinding.json`
+- Snippets - 프로필의 언어 스니펫 파일 `{language}.json`
+- User Tasks - 프로필의 `tasks.json`
+
+[vscode 도큐먼트 : Profile](https://code.visualstudio.com/docs/editor/profiles) 에는 다음과 같은 설명이 있습니다.
+
+> 프로필을 선택하면 현재 워크스페이스 설정과 연동되며, 해당 폴더를 열 때마다 워크스페이스에 지정된 프로필이 활성화됩니다. 
+> 워크 스페이스 활성화 시에 마지막으로 사용한 프로필 정보가 남아 있으면 프로필은 해당 관련 프로필로 전환됩니다.
 
 
 
 ## 기기간 설정 동기화 : sync
 
-vscode는 github 계정 인증을 통한 온라인 계정 동기화를 제공한다. (gist)
+vscode는 github 계정 기반의 온라인 계정 동기화를 제공합니다. (gist)
 
-포맷 후 재설정 할 때 불러오기로 활용하면 좋다.
+포맷 후 재설정 할 때 불러오기로 활용하면 유용합니다.
 
-로컬에 한번 저장하면 오프라인에서도 사용할 수 있다.
+로컬에 한번 저장하면 오프라인에서도 사용할 수 있습니다.
 
 ## 코드 조각 삽입하기 : snippet
 
-스니펫은 접두사를 입력해서 코드조각을 삽입하는 기능이다.
+스니펫은 접두사를 입력해서 코드조각을 삽입하는 기능입니다.
 
-
-스니펫 설정은 간단하다.
+스니펫 설정은 간단합니다.
 
 1. 언어별 스니펫 파일 생성
 
@@ -135,14 +153,14 @@ section='snippet' %}
 
 ## 원격 접속해서 사용 : vscode server
 
-vscode에서 ssh 접속을 하면 접속지의 파일시스템이나 익스텐션을 사용할 수 있는데, 이는 접속지의 vscode-server를 사용하는 덕분이다.
+vscode에서 ssh 접속을 하면 접속지의 파일시스템이나 익스텐션을 사용할 수 있는데, 이는 접속지에 설치되는 vscode-server를 사용하는 덕분입니다.
 
 [vscode 도큐먼트 : Visual studio server](https://code.visualstudio.com/docs/remote/vscode-server)
 
 
 ## 개발용 컨테이너 : devcontainer
 
-devcontainer를 사용하면 vscode에서 열린 파일들을 공유하는 도커 컨테이너를 생성할 수 있다.
+devcontainer를 사용하면 vscode에서 열린 파일들을 공유하는 도커 컨테이너를 생성할 수 있습니다.
 
 [vscode 도큐먼트 : devcontainer 개발](https://code.visualstudio.com/docs/devcontainers/containers#_opening-a-terminal)
 

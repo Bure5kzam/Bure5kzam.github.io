@@ -15,23 +15,30 @@ intro:
   - excerpt: '컴퓨터 공학과 학사 졸 제조업 연구직 근무 중'
 feature_row:
 
-  - image_path: assets/image/mm-customizable-feature.png
-    alt: "placeholder image 1"
-    title: "Placeholder"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+  - image_path: assets/image/vscode.png
+  # - image_path: assets/image/mm-customizable-feature.png
+    image_caption: "작성 중"
+    alt: "vscode 사용하기"
+    title: "vscode 사용하기"
+    excerpt: "visual studio 에서 vscode로 넘어오는 팀원들을 위한 글"
+    url: "/vscode"
+    btn_label: "Read"
+    btn_class: "btn--primary"
 
-  - image_path: /assets/image/mm-customizable-feature.png
-    # image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
-    alt: "placeholder image 2"
-    title: "Placeholder"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
-    # url: "#test-link"
-    # btn_label: "Read More"
-    # btn_class: "btn--primary"
+    
 
-  - image_path: /assets/image/mm-customizable-feature.png
-    title: "Placeholder"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+  # - image_path: /assets/image/mm-customizable-feature.png
+  #   # image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
+  #   alt: "placeholder image 2"
+  #   title: "Placeholder"
+  #   excerpt: "This is some sample content that goes here with **Markdown** formatting."
+  #   # url: "#test-link"
+  #   # btn_label: "Read More"
+  #   # btn_class: "btn--primary"
+
+  # - image_path: /assets/image/mm-customizable-feature.png
+  #   title: "Placeholder"
+  #   excerpt: "This is some sample content that goes here with **Markdown** formatting."
 
 # feature_row2:
 #   - image_path: /assets/image/vscode.png
