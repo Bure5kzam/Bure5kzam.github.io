@@ -12,7 +12,7 @@ author: Bure5kzam
 
 Dockerfile의 `ENTRYPOINT`는 이미지를 실행할 때 실행할 `executable`을 지정하는 지시어입니다.
 
-`ENTRYPOINT`는 `shell form`과 `exec form` 중 뭘로 작성하는지에 따라 동작이 다릅니다.
+`ENTRYPOINT`는 `shell form`인지 `exec form` 인지에 따라 동작이 다릅니다.
 
 | - |shell form| exec form|
 |--- | --- | ---|
