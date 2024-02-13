@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 유저의 종류와 권한
 date: 2023-03-15 22:54
 category: 

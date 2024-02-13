@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 
 date: 2023-12-16 23:56
 category: 

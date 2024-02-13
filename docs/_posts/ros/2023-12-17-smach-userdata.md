@@ -1,14 +1,15 @@
 ---
-layout: post
-title: smach 유저 데이터 사용하기
+layout: single
+title: smach userdata로 state간에 상태 전달하기
 date: 2023-12-18 22:34
-category: ros
+category: ROS
+tags : [ROS, smach]
 author: Bure5kzam
 ---
 
 > https://wiki.ros.org/smach/Tutorials/User%20Data
 
-t
+
 state은 input data과 output data를 가질 수 있음.
 
 input data로 받은 값을 로직에 활용할 수 있으며, output data을 지정하면 다른 state로 전환될 때 데이터를 제공할 수 있음.

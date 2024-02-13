@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: vscode extension 설치하기
 date: 2023-10-17 07:25
 category:

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: c++ std::placeholders
 date: 2023-09-15 19:08
 category:

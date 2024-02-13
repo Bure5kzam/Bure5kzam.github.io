@@ -1,10 +1,10 @@
 ---
-layout: post
-title: 
-date: 2023-12-23 15:13
-category: 
-author: 
-tags: []
+layout: single
+title: smach preemption
+date: 2023-12-18 15:13
+category: ROS
+author: Bure5kzam
+tags: [ROS, smach]
 summary: 
 ---
 
@@ -18,6 +18,7 @@ https://wiki.ros.org/mysmach/Tutorials/State%20Preemption%20Implementation
 상태가 없거나 기본 컨테이너 타입만으론 부족할 수 있다. 판단하기 전에 제공대는 상태와 컨테이너 타입을 체크해봐야한다. 새 Smack state를 정의 하기 전에 세 가지 주요 기능을 고려해야 한다.
 
 **Interface declaration**
+
 SMACH 컨테이너는 포함된 state와 상호작용할 때 state outcome과 userdata key를 활용한다. outcome은 컨테이너의 다음 타겟 state와 연결하는데 사용한다. userdata key는 시스템의 dataflow를 따라가는데 필요하다. 정확한 선언은 SMACH tree의 생성자에서 미리 상태 구조의 문제점을 발견하게 해준다.
 
 **Execution implementation**
@@ -31,7 +32,7 @@ SMACH 컨테이너는 포함된 state와 상호작용할 때 state outcome과 us
 예제처럼 간단한 경우, 선점 간단히 `preempt_requested()` 메소드로 완료될 수 있다.만약 안되면 새 state 클래스에서 `request_preempt()` 메소드가 부하를 받을 수 있다. Preempts은 보통 다른 쓰레드에서 발생할 것이며 이 메소드는 하위 스레드나 프로세스에 선점을 알리는데 걸리는 시간보다 더 오래 차단되어서는 안된다.
 
 
-```bash
+```python
 import roslib; roslib.load_manifest('smach')
 import rospy
 

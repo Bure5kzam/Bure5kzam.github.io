@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 도커 파일 지정할 때 유의해야 할 점
 date: 2023-10-22 10:32
 category: 

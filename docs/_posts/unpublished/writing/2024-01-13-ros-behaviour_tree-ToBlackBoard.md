@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 
 date: 2024-01-14 16:51
 category: 

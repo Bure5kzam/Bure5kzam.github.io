@@ -18,7 +18,7 @@ vscode에서 열러는 폴더/워크스페이스의 루트 경로에 `.post-temp
 
 ```jekyll
 ---
-layout: post
+layout: single
 title: This is a new article
 author: User
 summary: Summary of the article

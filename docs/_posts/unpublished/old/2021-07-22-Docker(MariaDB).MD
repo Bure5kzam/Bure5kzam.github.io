@@ -10,7 +10,7 @@ mermaid: true
 ---
 # MariaDB with Docker
 
-SSAFYens 프로젝트에 사용하기 위해 MariaDB를 설치하던 중 Docker 환경을 이용해보기로 했습니다.
+프로젝트에 사용하기 위해 MariaDB를 설치하던 중 Docker 환경을 이용해보기로 했습니다.
 
 # MariaDB 사용해보기(WSL2)
 
@@ -33,13 +33,13 @@ $ docker pull mariadb
 $ docker run -p 127.0.0.1:3306:3306  --name mariadb -e MARIADB_ROOT_PASSWORD=my-secret-pw -d mariadb:tag
 ```
 
-## (error) An attempt was made to access a socket in a way forbidden by its access permissions.
+## 에러 내용 : An attempt was made to access a socket in a way forbidden by its access permissions.
 
 권한문제인줄 알고 관리자 모드로 실행해보기도 했는데, 도커 포럼에 검색해보니 그냥 사용 중인 포트라 바인딩 할 권한을 얻지 못했다는 의미였습니다
 
 .(https://forums.docker.com/t/error-starting-userland-proxy-listen-tcp-0-0-0-0-bind-an-attempt-was-made-to-access-a-socket-in-a-way-forbidden-by-its-access-permissions/81299/7)
 
-###(solve)
+### 해결
 
 포트를 사용하고있는 서비스를 종료해주었습니다,,
 

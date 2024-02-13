@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: ROS 퍼블리셔 예시 분석하기
 date: 2023-09-12 20:01
 category: ros

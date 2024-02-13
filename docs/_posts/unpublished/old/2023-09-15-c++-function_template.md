@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: c++ function tamplate
 date: 2023-09-15 13:37
 category:

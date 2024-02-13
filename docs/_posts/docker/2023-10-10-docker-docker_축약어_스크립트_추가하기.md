@@ -1,12 +1,16 @@
 ---
-layout: post
-title: 도커 exec 스크립트 추가하기
+layout: single
+title: 도커 관련 명령어 축약어를 스크립트에 추가하기
 date: 2023-10-10 07:02
 category: docker
+layout: single
 author: Bure5kzam
 tags: []
-summary:
 ---
+
+{% include callout-writing.html %}
+
+우분투 쉘에서 도커를 축약어로 사용하기 위한 작업입니다.
 
 ``` bash
 dockerbash() {
@@ -17,3 +21,5 @@ dockerbash() {
         fi
 }
 ```
+
+

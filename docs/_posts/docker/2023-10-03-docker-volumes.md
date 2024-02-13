@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 도커 볼륨
 date: 2023-10-03 18:21
 category:

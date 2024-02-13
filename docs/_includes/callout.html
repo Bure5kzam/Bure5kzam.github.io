@@ -1,0 +1,21 @@
+{% assign callout_contents = include.contents %}
+{% assign callout_type = include.type | default: 'Default' %}
+
+{% case callout_type %}
+  {% when 'default' %}
+    {% assign class_name = 'notice' %}
+  {% when 'primary' %}
+    {% assign class_name = 'notice--primary' %}
+  {% when 'info' %}
+    {% assign class_name = 'notice--info' %}
+  {% when 'warning' %}
+    {% assign class_name = 'notice--warning' %}
+  {% when 'success' %}
+    {% assign class_name = 'notice--success' %}
+  {% when 'danger' %}
+    {% assign class_name = 'notice--danger' %}
+  {% else %}
+    {% assign class_name = 'notice' %}
+{% endcase %}
+
+<p class="{{ class_name }}">{{ callout_contents }}</p>

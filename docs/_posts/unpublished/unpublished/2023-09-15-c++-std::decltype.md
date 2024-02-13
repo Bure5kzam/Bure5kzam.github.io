@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: c++ decltype specifier
 date: 2023-09-15 19:32
 category:
