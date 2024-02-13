@@ -25,16 +25,14 @@ feature_row:
     btn_label: "Read"
     btn_class: "btn--primary"
 
-    
-
-  # - image_path: /assets/image/mm-customizable-feature.png
-  #   # image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
-  #   alt: "placeholder image 2"
-  #   title: "Placeholder"
-  #   excerpt: "This is some sample content that goes here with **Markdown** formatting."
-  #   # url: "#test-link"
-  #   # btn_label: "Read More"
-  #   # btn_class: "btn--primary"
+  - image_path: /assets/image/ubuntu.png
+    # image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
+    alt: "리눅스 마스터 시험 준비하기"
+    title: "리눅스 마스터 시험 준비하기"
+    excerpt: "시험 준비하면서 공부 했던 내용 기록"
+    url: "/ubuntu"
+    btn_label: "Read"
+    btn_class: "btn--primary"
 
   # - image_path: /assets/image/mm-customizable-feature.png
   #   title: "Placeholder"

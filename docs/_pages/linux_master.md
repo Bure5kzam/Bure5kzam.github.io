@@ -1,9 +1,15 @@
 ---
-layout: single
 title: 우분투 마스터 1급 실기 리뷰
+layout: single
+permalink: /ubuntu/
+collection: ubuntu
+entries_layout: grid
+author_profile: true
+toc : true
 date: 2022-07-10 11:20
-category: ubuntu
 summary: 
+author: Bure5kzam
+classes: wide
 ---
 
 
@@ -11,8 +17,9 @@ summary:
 
 처음에 준비기간을 1년 잡았는데 중간에 취업하고 연애하다보니 생각보다 오래 걸렸네요. 
 
-<!-- 필기 : 21.06.10 ~ 9.11 (약 3개월)
-실기 : 21.04.25 ~ 11.10 (약 6개월) -->
+필기 : 21.06.10 ~ 9.11 (약 3개월)
+
+실기 : 21.04.25 ~ 11.10 (약 6개월)
 
 <!-- # 준비 방법
 
@@ -60,68 +67,82 @@ OMR 마킹 4지선다 유형으로 진행됩니다.
  
 리눅스 마스터는 명령어를 완전히 암기하고 응시하는 시험이 아닙니다.
 
-상황에 맞는 명령어나 바이너리만 암기하고 시험에서는 매뉴얼을 참고해야 합니다.
+명령어나 바이너리만 키워드로 암기해두고 시험에서는 매뉴얼을 참고해서 옵션이나 경로를 찾아 작성해야 합니다.
 
-``` console
-# Example, 터미널에서 find 명령어의 메뉴얼을 보여주는 커맨드
-
+``` bash
+# 쉘에서 find 명령어의 메뉴얼을 보여주는 커맨드
 $ man find
 ```
 
 `man` 명령어의 매뉴얼을 참고하시면 시험에 많은 도움이 됩니다.
 
-### 특정 섹션 페이지 보기
+### 메뉴얼에서 특정 섹션만 보기
 
-명령어 매뉴얼은 용도 별로 여러 섹션으로 나눠 작성되어있습니다.
+`man` 커맨드의 메뉴얼 페이지를 보면 메뉴얼의 섹터 구성 정보가 있습니다.
 
-> $ man man , [DESCRIPTION]
-> 1   Executable programs or shell commands
-> 2   System calls (functions provided by the kernel)
-> 3   Library calls (functions within program libraries)
-> 4   Special files (usually found in /dev)
-> 5   File formats and conventions eg /etc/passwd
-> 6   Games
-> 7   Miscellaneous (including macro packages and conventions), e.g. man(7), groff(7)
-> 8   System administration commands (usually only for root)
-> 9   Kernel routines [Non standard]
+이 중 중요한 섹터는 1, 5, 8입니다.
+```bash
+bure@burepool:  man man , [DESCRIPTION]<br/>
+1   : 실행 가능한 프로그램 또는 쉘 명령어 <br/>   
+5   : 파일 형식 그리고 규칙 (File formats and conventions, eg /etc/passwd)<br/>
+8   : 시스템 관리자 명령어 (System administration commands, usually only for root)<br/>
 
-사용자가 터미널에서 직접 실행하는 Shell commands 와 프로그램 내에서 실행하는 System calls 의 사용법이 같을리가 없겠죠.
+그 외의 것들...
 
-찾는 내용과 맞는 섹션을 찾으시면 됩니다.
-공부하면서 주로 쉘 명령어 설명인 1, 8과 config 파일인 5를 많이 참고했습니다.
+2   : System calls (functions provided by the kernel)<br/>
+3   : Library calls (functions within program libraries)<br/>
+4   : Special files (usually found in /dev)<br/>
+6   : Games<br/>
+7   : Miscellaneous (including macro packages and conventions), e.g. man(7), groff(7)<br/>
+9   : Kernel routines [Non standard]<br/>
 
-``` console
+```
 
-# 매뉴얼의 특정 세션 보기
+메뉴얼이 기니 필요한 섹터만 확인하시는게 좋습니다.
+
+``` bash
+
+# 매뉴얼의 특정 세션 보기 예시
 
 $ man 1 find # command
-$ man 5 find # config
+$ man 5 find # config, find는 파일에 관한 매뉴얼이 없음
 
 ```
 
 
-### 키워드 검색하기
+### 메뉴얼 페이지 키워드로 검색하기
 
-명령어 이름, 명령어 설명에 있는 키워드를 검색할 수 있습니다.
+이름과 설명에 키워드가 포함된 메뉴얼만 검색할 수 있습니다.
 
-```console
+```bash
 
-$ man -k find
+bure@burepool:~/test/docker_cmd_and_entrypoint$ man -k find 
+
+cluster (1)          - find clusters in a graph and augment the graph with this information.
+ffs (3)              - find first bit set in a word
+ffsl (3)             - find first bit set in a word
+ffsll (3)            - find first bit set in a word
+File::IconTheme (3pm) - Find icon directories
+
+...
 
 ```
 
-### 매뉴얼 페이지에서 검색하기
+### 매뉴얼 페이지 안에서 검색하기
 
- 메뉴얼 페이지는 글이 많아 필요한 내용을 바로 찾기가 쉽지 않습니다.  검색하는 법을 기억해 두는 것이 좋습니다 
+ 메뉴얼 페이지는 글이 많아 필요한 내용을 바로 찾기가 쉽지 않습니다. 검색하는 법을 기억해 두는 것이 좋습니다 
+
  man page에서 `슬래쉬 '/' + 키워드`로 찾을 수 있습니다.
 
 
-## 명령어 --help 옵션 활용하기
+## 명령어의 --help 옵션 활용하기
 
-일부 명령어는 --help 옵션을 지원합니다.
-명령어 옵션 사용법을 요약해 주기때문에 사용하려는 옵션이 기억안날 때 유용합니다.
+일부 명령어는 요약 설명인 --help 옵션을 지원합니다.
 
-```console
+짧기 때문에 단순하게 옵션이 뭐하는 용도인지 확인할 때 유용합니다.
+
+```bash
+
 [root@localhost share]# cat --help
 사용법: cat [<옵션>]... [<파일>]...
 Concatenate FILE(s), or standard input, to standard output.
@@ -137,36 +158,32 @@ Concatenate FILE(s), or standard input, to standard output.
 ...
 ```
 
-<!-- ## man pgages 문법 해석하기
 
-... -->
+## find 명령어로 파일 찾기
 
+실기문제(11번 ~ 16번)는 서비스 설정 파일 이름, 경로를 적고 내용을 채우는 유형이 나옵니다.
 
-## find 명령어 활용하기
+설정 파일 이름을 안다면 find 명령어로 경로를 찾을 수 있습니다.
 
-find 명령어는 실기문제(11번 ~ 16번)는 서비스 설정 파일을 찾을 때 많이 사용합니다.
+ ``` bash
+# find [시작 경로] [-name 이름] [-type {f | d}] 
+[root@localhost ~]# find / -name *named.conf*
 
- ``` console
- # find {명령어} [-name 이름] [-type {f | d}] 
- [root@localhost ~]# find / -name *named.conf*
+...
+
 /etc/named.conf
- ```
 
-`type` 옵션은 디렉토리(d)와 파일 (f)을 지정할 수 있습니다.
+...
+
+```
+
+`type` 옵션으로 디렉토리나 파일만 필터링할 수 있습니다.
 
 ## 실기 문제 위주로 공부하기
 
-2차 시험은 필기 10 문제와 실기 6 문제가 출제되는데, 실기 비율이 높습니다. (필기 : 40, 실기 : 60)
+2차 시험은 필기 10 문제와 실기 6 문제가 출제되는데, 점수 비율은 실기가 더 높습니다. (필기 : 40, 실기 : 60)
 
 같은 문제를 맞춰도 실기를 맞추는게 배점이 높습니다.
-
-## 원격 터미널 사용하기
-
-저는 Virtual box 에서 우분투 구동시켰는데, 터미널 글씨가 작아서 보기가 힘들더라구요.
-
-그래서 vscode extension인 remote ssh로 원격접속해서 봤습니다.
-
-다른분들도 힘들게 화면 보지 마시고 사용하시는 터미널로 원격접속하시길..
 
 ## 매뉴얼 웹에서 보기
 
@@ -174,9 +191,10 @@ find 명령어는 실기문제(11번 ~ 16번)는 서비스 설정 파일을 찾�
 
 `https://linux.die.net/man/5/gshadow`
 
-# 문제 유형
+# 문제 범위
 
 제가 시험을 준비하며 공부했던 명령어의 80% 정도 기록한 것 같습니다.
+
 (이론 제외)
 
 보시고 대충 시험에 이런 내용들이 나오는구나 생각하시면 될 것 같습니다.
@@ -316,7 +334,7 @@ find 명령어는 실기문제(11번 ~ 16번)는 서비스 설정 파일을 찾�
 
 ---
 
-취득하고 주변에 자랑하면 70%는 몰라서 자격증으로서의 입지는 잘 모르겠네요.
+취득하고 주변에 자랑해봤는데 70%는 모르는거 같습니다 ㅠ 자격증으로서의 입지는 잘 모르겠어요
 
 임베디드랑 보안하는 사람들만 아는 시험인 것 같습니다.
 

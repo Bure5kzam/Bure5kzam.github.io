@@ -300,7 +300,7 @@ defaults:
 
   # vscode 관련 폴더
   - scope:
-      path: "_posts/vscode"
+      path: "_posts/docker"
       type: posts
 
     values:
