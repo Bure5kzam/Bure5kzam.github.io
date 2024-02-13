@@ -17,7 +17,7 @@ category: ubuntu
 
 **UID**는 유저를 나타내는 양수 숫자이며 일반적으로 고유합니다.
 
- **username**은 사람이 알아보기 쉬운 이름입니다.ㅁㅋ
+ **username**은 사람이 알아보기 쉬운 이름입니다.
 
  파일을 생성하면 파일의 소유자, 소유 그룹, 그 외(user, group, other)에 대해 읽기, 쓰기, 실행(read, write, execute) 권한이 생기며, 엑세스한 유저가 소유자면 `user`권한이 적용 되고 아니면 `other` 권한이 적용됩니다.
 
@@ -33,7 +33,7 @@ category: ubuntu
 
 `/etc/login.defs` 파일을 수정하면 UID와 SYS_UID 대역을 변경할 수 있습니다.
 
-```console
+```bash
 # /etc/login.defs 파일
 ...
 
@@ -71,7 +71,7 @@ ubuntu에서는 `/etc/passwd`에서 유저 정보 중 보안과 관련없는 기
 
 ### 필드 설명
 
-```console
+```bash
 
 # each fields's Means at file /etc/passwd
 

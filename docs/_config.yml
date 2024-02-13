@@ -256,10 +256,10 @@ collections:
   vscode:
     output: true
     permalink: /:collection/:path/
+    
 
 # Defaults
 defaults:
-  #_posts
   - scope:
       path: "_posts/algo"
       type: posts
@@ -298,10 +298,32 @@ defaults:
       repository: Bure5kzam/GithubBlog
       show_date: true
 
-  # vscode 관련 폴더
+  # docker 관련 폴더
   - scope:
       path: "_posts/docker"
       type: posts
+
+    values:
+      layout: single
+      category: docker
+      author: Bure5kzam
+      author_profile: true
+      classes : wide
+
+      toc: true
+      toc_sticky: true
+
+      read_time: true
+      comments: true # true
+      share: true
+      related: true
+      repository: Bure5kzam/GithubBlog
+      show_date: true
+
+  # vscode 관련 포스트
+  - scope:
+      path: "_vscode"
+      # type: posts #! 포스트가 아닌가봄, 활성화하면 적용이 안됨
 
     values:
       layout: single
