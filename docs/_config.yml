@@ -252,21 +252,37 @@ compress_html:
     envs: development
 
 # Collections
-collections:
-  # vscode:
-  #   output: true
-  #   permalink: /:collection/:path/
+# collections:
 
-  ubuntu:
-    output: true
-    # permalink: /:collection/:path/
-
-  test:
-    permalink: /:collection/:path/
+#   ubuntu:
+#     output: true
+#     permalink: /:collection/:path/
     
 
 # Defaults
 defaults:
+  - scope:
+      path: "_posts"
+      type: posts
+      #! 포스트가 아닌가봄, 활성화하면 적용이 안됨
+
+    values:
+      layout: single
+      author: Bure5kzam
+      
+      author_profile: true
+      classes : wide
+
+      toc: true
+      toc_sticky: true
+
+      read_time: true
+      comments: true # true
+      share: true
+      related: true
+      repository: Bure5kzam/GithubBlog
+      show_date: true
+
   - scope:
       path: "_posts/algo"
       type: posts
@@ -352,14 +368,14 @@ defaults:
 
   # ubuntu 관련 포스트
   - scope:
-      path: "_ubuntu"
+      path: "_posts/ubuntu"
 
     values:
-      layout: single
+      # layout: single
       category: ubuntu
-      author: Bure5kzam
-      author_profile: true
-      classes : wide
+      # author: Bure5kzam
+      # author_profile: true
+      # classes : wide
 
       toc: true
       toc_sticky: true

@@ -30,7 +30,7 @@ feature_row:
     alt: "리눅스 마스터 시험 준비하기"
     title: "리눅스 마스터 시험 준비하기"
     excerpt: "시험 준비하면서 공부 했던 내용 기록"
-    url: "/ubuntu"
+    url: "/linux-master"
     btn_label: "Read"
     btn_class: "btn--primary"
 

@@ -1,8 +1,8 @@
 ---
-title: 우분투 마스터 1급 실기 리뷰
+title: 리눅스 마스터 1급 실기 리뷰
 layout: single
-permalink: /ubuntu/
-collection: ubuntu
+permalink: /linux-master/
+collection: linux-master
 entries_layout: grid
 author_profile: true
 toc : true
