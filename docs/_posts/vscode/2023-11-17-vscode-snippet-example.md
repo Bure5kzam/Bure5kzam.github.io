@@ -1,7 +1,7 @@
 ---
 title: vscode 스니펫 만들기 (c++)
 date: 2023-11-17 22:36
-tags: [vscode, snippet]
+tags: [snippet]
 
 ---
 

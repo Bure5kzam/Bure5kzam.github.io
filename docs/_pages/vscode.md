@@ -78,7 +78,6 @@ vscode의 설정 내용은 `setting.json` 파일에 json 형식으로 저장됩�
 
 (적용 우선순위는 `defaultsetting.json` < `~/setting.json` < `pwd/.vscode/.setting.json` 순서로 점점 높아집니다.)
 
-<br/>
 
 `setting.json`에서 수정할 수 있는 내용은 너무 많아서 [vscode 공식 페이지 링크](https://code.visualstudio.com/docs/getstarted/settings#_default-settings)로 대체합니다.
 
@@ -97,10 +96,6 @@ vscode의 설정 내용은 `setting.json` 파일에 json 형식으로 저장됩�
 확장프로그램 구성을 용도별로 프로필로 저장해두면 필요할 때 전환해서 사용할 수 있음 (파이썬용 프로필, 마크다운용 프로필 등)
 
 **관련 포스트**
-
-{% assign entries_layout = page.entries_layout | default: 'list' %}
-{% include documents-collection-by-section.html collection=page.collection
-section='extension' %}
 
 {% include posts-tags.html cat="vscode" tag="extension" type="grid" %}
 
@@ -150,9 +145,7 @@ vscode는 github 계정 기반의 온라인 계정 동기화를 제공합니다.
 
 **관련 포스트**
 
-{% assign entries_layout = page.entries_layout | default: 'list' %}
-{% include documents-collection-by-section.html collection=page.collection
-section='snippet' %}
+{% include posts-tags.html cat="vscode" tag="snippet" type="grid" %}
 
 
 ## 원격 접속해서 사용 : vscode server
