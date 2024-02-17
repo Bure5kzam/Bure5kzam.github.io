@@ -3,6 +3,7 @@ title: vscode의 세부적인 설정 범위
 date: 2023-10-17 19:17
 category: vscode
 author: Bure5kzam
+tags : [ setting]
 ---
 
 ## vscode 설정의 종류

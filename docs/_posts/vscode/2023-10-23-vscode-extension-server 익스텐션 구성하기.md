@@ -1,6 +1,7 @@
 ---
 title: 오프라인에서 vscode 확장 프로그램 구성하기
 date: 2023-10-23 19:17
+tags : [extension]
 ---
 
 ## Overview 

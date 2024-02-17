@@ -1,0 +1,35 @@
+{% assign post_names = include.posts | split: ',' %}
+
+{% assign p = site.posts | first %}
+
+exerpt : {{ p.excerpt }}
+
+name {{ p.id }}
+
+title {{ p.title }}
+
+url : {{ p.path }}
+
+[aa]( {{p.url}})
+
+{%- capture _page_url -%}
+  {% post_url {{ post_names | frist}} %}
+{%- endcapture -%}
+
+aaff {{ _page_url }}
+
+{% for post_name in post_names %}
+  {{ post_name }}
+  {% post_url {{post_name}} %}
+{% endfor %}
+
+{% for post_name in post_names %}
+  {{ post_name }}
+  {% assign target_post = site.posts | where: 'name', post_name | first %}
+  {% if target_post %}
+    <p>
+      {{ target_post.title }}
+      {{ target_post.url }}
+    </p>
+  {% endif %}
+{% endfor %}

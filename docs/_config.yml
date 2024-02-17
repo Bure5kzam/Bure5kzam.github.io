@@ -253,8 +253,15 @@ compress_html:
 
 # Collections
 collections:
-  vscode:
+  # vscode:
+  #   output: true
+  #   permalink: /:collection/:path/
+
+  ubuntu:
     output: true
+    # permalink: /:collection/:path/
+
+  test:
     permalink: /:collection/:path/
     
 
@@ -322,12 +329,34 @@ defaults:
 
   # vscode 관련 포스트
   - scope:
-      path: "_vscode"
-      # type: posts #! 포스트가 아닌가봄, 활성화하면 적용이 안됨
+      path: "_posts/vscode"
+      type: posts
+      #! 포스트가 아닌가봄, 활성화하면 적용이 안됨
 
     values:
       layout: single
       category: vscode
+      author: Bure5kzam
+      author_profile: true
+      classes : wide
+
+      toc: true
+      toc_sticky: true
+
+      read_time: true
+      comments: true # true
+      share: true
+      related: true
+      repository: Bure5kzam/GithubBlog
+      show_date: true
+
+  # ubuntu 관련 포스트
+  - scope:
+      path: "_ubuntu"
+
+    values:
+      layout: single
+      category: ubuntu
       author: Bure5kzam
       author_profile: true
       classes : wide

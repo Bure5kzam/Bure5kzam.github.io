@@ -1,7 +1,8 @@
 ---
 title: vscode 스니펫 문법
 date: 2023-11-18 22:36
-tags: [vscode, snippet]
+category : vscode
+tags: [snippet]
 
 ---
 

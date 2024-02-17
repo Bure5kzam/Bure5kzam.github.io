@@ -1,0 +1,10 @@
+
+{% assign posts = site.categories.[include.cat] %}
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+<div class="entries-{{ entries_layout }}" style="display:flex">
+  {%- for post in posts -%}
+    {% if post.tags[0] contains include.tag or post.tags[1] contains include.tag %}
+      {% include archive-single.html %}
+    {% endif %}
+  {%- endfor -%}
+</div>

@@ -1,7 +1,7 @@
 ---
 title:  vscode snippet 설정 파일 범위
 date: 2023-11-19 16:20
-tags: [vscode, snippet]
+tags: [snippet]
 
 ---
 

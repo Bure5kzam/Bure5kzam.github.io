@@ -17,9 +17,14 @@ classes: wide
 
 # Overview
 
+
 > watch out
 > 작성 중인 글
 {: .notice--warning}
+
+<!-- <div class="entries-grid">
+  {% include documents-collection.html collection="ubuntu" sort_by=page.sort_by sort_order=page.sort_order type="grid" %}
+</div> -->
 
 
 팀을 옮기면서 IDE를 Visual studio에서 Visual studio로 바꾸게 되었습니다.
@@ -81,10 +86,7 @@ vscode의 설정 내용은 `setting.json` 파일에 json 형식으로 저장됩�
 
 **관련 포스트**
 
-{% assign entries_layout = page.entries_layout | default: 'list' %}
-  {% include documents-collection-by-section.html collection=page.collection
-   section='setting' %}
-
+{% include posts-tags.html cat="vscode" tag="setting" type="grid" %}
 
 ## 확장 프로그램 : Extension
 
@@ -99,6 +101,8 @@ vscode의 설정 내용은 `setting.json` 파일에 json 형식으로 저장됩�
 {% assign entries_layout = page.entries_layout | default: 'list' %}
 {% include documents-collection-by-section.html collection=page.collection
 section='extension' %}
+
+{% include posts-tags.html cat="vscode" tag="extension" type="grid" %}
 
 
 ## Profile
