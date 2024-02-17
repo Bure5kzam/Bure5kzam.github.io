@@ -2,7 +2,7 @@
 title: 우분투 사용자 홈 디렉토리
 category : ubuntu
 author: Bure5kzam
-tags: [linux, user]
+tags: [user]
 summary: 리눅스 사용자 계정 
 ---
 

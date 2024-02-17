@@ -3,6 +3,7 @@ layout: single
 title: 우분투 유저
 date: 2022-07-10 12:25
 category: ubuntu
+tags : [user]
 ---
 
 # Overview

@@ -1,8 +1,8 @@
 ---
-title: 
+title: 우분투 유저 관리 파일 passwd
 category : ubuntu
 author: Bure5kzam
-tags: [linux, user]
+tags: [user]
 summary: 리눅스 사용자 계정 
 ---
 

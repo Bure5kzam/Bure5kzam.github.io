@@ -27,6 +27,15 @@ feature_row:
 
   - image_path: /assets/image/ubuntu.png
     # image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
+    alt: "ubuntu 공부하기"
+    title: "ubuntu 공부하기"
+    excerpt: "로봇 시스템 devops의 길"
+    url: "/ubuntu"
+    btn_label: "Read"
+    btn_class: "btn--primary"
+
+  - image_path: /assets/image/리눅스 마스터.png
+    # image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
     alt: "리눅스 마스터 시험 준비하기"
     title: "리눅스 마스터 시험 준비하기"
     excerpt: "시험 준비하면서 공부 했던 내용 기록"

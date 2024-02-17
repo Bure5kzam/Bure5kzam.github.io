@@ -1,10 +1,10 @@
 ---
 layout: single
-title: 
+title: ubuntu 유저 삭제
 date: 2023-03-16 23:40
 category: ubuntu
 author: 
-tags: []
+tags: [user]
 summary: 
 ---
 

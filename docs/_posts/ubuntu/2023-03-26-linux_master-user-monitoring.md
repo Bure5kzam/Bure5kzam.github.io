@@ -2,7 +2,7 @@
 title: 우분투 접속중인 유저 모니터링 하기
 category : ubuntu
 author: Bure5kzam
-tags: [linux, user]
+tags: [user]
 summary: 접속중인 리눅스 사용자들 조회하기
 ---
 
