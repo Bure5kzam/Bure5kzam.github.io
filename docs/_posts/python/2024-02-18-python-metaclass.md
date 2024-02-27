@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: python, metaclass에 대해
 date: 2024-02-18 16:10
 category: 

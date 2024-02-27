@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: vscode task 변수 치환
 date: 2024-02-18 23:44
 category: vscode

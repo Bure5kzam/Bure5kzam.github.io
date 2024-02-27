@@ -1,6 +1,6 @@
 ---
-layout: post
-title: python __init__과 __new__ 차이
+layout: single
+title: python `__init__`과 `__new__` 차이
 date: 2024-02-19 00:00
 category: python
 author: Bure5kzam
