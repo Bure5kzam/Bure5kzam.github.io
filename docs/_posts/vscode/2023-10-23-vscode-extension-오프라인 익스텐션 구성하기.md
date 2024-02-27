@@ -5,7 +5,8 @@ tags : [extension]
 ---
 
 ## Overview 
-먼저 콘솔용 vscode 제어 명령어인 `code`가 있어야 한다.
+
+먼저 호스트에 콘솔용 vscode 제어 명령어인 `code`가 있는지 확인해야 한다.
 
 [docs link, vscode](https://code.visualstudio.com/docs/editor/extension-marketplace#_configuring-extensions)
 
@@ -21,7 +22,7 @@ x64
 
 마켓에서 extension 패키지 파일인 `vsix` 파일을 마켓에서 다운받으면 `code` 명령어로 설치할 수 있다.
 
-[docs link, vscode, vsix](https://code.visualstudio.com/docs/editor/extension-marketplace#_common-questions)
+[vscode, docs link,  vsix](https://code.visualstudio.com/docs/editor/extension-marketplace#_common-questions)
 
 ```bash
 # install extension in cli
